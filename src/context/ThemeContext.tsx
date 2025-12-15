@@ -10,7 +10,7 @@ const ThemeProvider: React.FC<Props> = ({ children }) => {
   return (
     <NextThemeProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="light"
       enableSystem
       disableTransitionOnChange
     >
