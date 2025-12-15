@@ -9,11 +9,10 @@ const kValue = (v: unknown) => `${Math.round(n(v) / 1000)}k`;
 
 const totalPoi = (a: AreaProfile | SimilarAreaResult["area"]) =>
   n(a.bars) + n(a.restaurants) + n(a.hotels) + n(a.clubs);
-const priority = (v: unknown) => `${(n(v) / 1_000_000).toFixed(2)}%`;
 
 const useComparisonMetrics = (
   baseArea?: AreaProfile | null,
-  candidate?: SimilarAreaResult | null
+  candidate?: SimilarAreaResult | null,
 ) =>
   useMemo(() => {
     if (!baseArea || !candidate) return [];
@@ -54,7 +53,7 @@ const useComparisonMetrics = (
       {
         label: "Priority Score",
         store: "100",
-        candidate: priority(cand.priority_score),
+        candidate: n(cand.priority_score),
       },
     ];
   }, [baseArea, candidate]);

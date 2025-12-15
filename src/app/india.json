@@ -1,4 +1,3 @@
-
 {
   "type": "Topology",
   "arcs": [
@@ -16761,12 +16760,24 @@
         {
           "arcs": [[-3, -25, 25, 26, 27, 28, -15]],
           "type": "Polygon",
-          "properties": { "district": "Mamit", "dt_code": "266", "st_nm": "Mizoram", "st_code": "15", "year": "2011_c" }
+          "properties": {
+            "district": "Mamit",
+            "dt_code": "266",
+            "st_nm": "Mizoram",
+            "st_code": "15",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-18, -23, 29, 30]],
           "type": "Polygon",
-          "properties": { "district": "Saiha", "dt_code": "267", "st_nm": "Mizoram", "st_code": "15", "year": "2011_c" }
+          "properties": {
+            "district": "Saiha",
+            "dt_code": "267",
+            "st_nm": "Mizoram",
+            "st_code": "15",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1, 31, -12, 32, 33, -21]],
@@ -17332,7 +17343,13 @@
         {
           "arcs": [[-229, 237, 238, -234, 239]],
           "type": "Polygon",
-          "properties": { "district": "Jajpur", "dt_code": "382", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Jajpur",
+            "dt_code": "382",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[240, 241, 242, 243, 244]],
@@ -17381,7 +17398,13 @@
         {
           "arcs": [[-242, 260, 261, 262, -250]],
           "type": "Polygon",
-          "properties": { "district": "Boudh", "dt_code": "391", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Boudh",
+            "dt_code": "391",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-188, 263, 264, 265, 266, 267, 268, 269, 270, -191]],
@@ -17518,7 +17541,13 @@
         {
           "arcs": [[-277, -314, 314, 315, -306]],
           "type": "Polygon",
-          "properties": { "district": "Puri", "dt_code": "387", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Puri",
+            "dt_code": "387",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-255, 316, 317, 318, 319, 320, 321]],
@@ -17919,7 +17948,13 @@
         {
           "arcs": [[-415, 457, 458, 459, -424]],
           "type": "Polygon",
-          "properties": { "district": "North Goa", "dt_code": "585", "st_nm": "Goa", "st_code": "30", "year": "2011_c" }
+          "properties": {
+            "district": "North Goa",
+            "dt_code": "585",
+            "st_nm": "Goa",
+            "st_code": "30",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-439, -452, 460, 461, 462, 463, -455, -453]],
@@ -17957,7 +17992,13 @@
         {
           "arcs": [[-459, -471, 471]],
           "type": "Polygon",
-          "properties": { "district": "South Goa", "dt_code": "586", "st_nm": "Goa", "st_code": "30", "year": "2011_c" }
+          "properties": {
+            "district": "South Goa",
+            "dt_code": "586",
+            "st_nm": "Goa",
+            "st_code": "30",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-456, -464, 472, 473, -467, -465]],
@@ -18204,7 +18245,13 @@
         {
           "arcs": [[-89, -106, -119, -124, -129, -170, 540, 541, 542]],
           "type": "Polygon",
-          "properties": { "district": "Idukki", "dt_code": "596", "st_nm": "Kerala", "st_code": "32", "year": "2011_c" }
+          "properties": {
+            "district": "Idukki",
+            "dt_code": "596",
+            "st_nm": "Kerala",
+            "st_code": "32",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-90, -543, 543, 544, 545, -538, -92, -540]],
@@ -18253,7 +18300,13 @@
         {
           "arcs": [[-168, -173, 552, 553, -549, -552]],
           "type": "Polygon",
-          "properties": { "district": "Kollam", "dt_code": "600", "st_nm": "Kerala", "st_code": "32", "year": "2011_c" }
+          "properties": {
+            "district": "Kollam",
+            "dt_code": "600",
+            "st_nm": "Kerala",
+            "st_code": "32",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[554, -553, -172, -135]],
@@ -18709,12 +18762,24 @@
         {
           "arcs": [[-236, -280, -298, -261, -241, 676, 677, 678, 679]],
           "type": "Polygon",
-          "properties": { "district": "Angul", "dt_code": "384", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Angul",
+            "dt_code": "384",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[[680, 681, 682]], [[-259, 683, 684, 685]]],
           "type": "MultiPolygon",
-          "properties": { "district": "Dang", "dt_code": "489", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Dang",
+            "dt_code": "489",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-303, 688, -573, -569, -567, -327, -565]],
@@ -18763,7 +18828,13 @@
         {
           "arcs": [[-290, -300, -307, -316, 692, -362, 693]],
           "type": "Polygon",
-          "properties": { "district": "Ganjam", "dt_code": "388", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Ganjam",
+            "dt_code": "388",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-291, -694, -361, -331]],
@@ -18845,7 +18916,13 @@
         {
           "arcs": [[-518, -522, -529, -533, 699, 700, 701], [702]],
           "type": "Polygon",
-          "properties": { "district": "Kannur", "dt_code": "589", "st_nm": "Kerala", "st_code": "32", "year": "2011_c" }
+          "properties": {
+            "district": "Kannur",
+            "dt_code": "589",
+            "st_nm": "Kerala",
+            "st_code": "32",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-141, 704, -148]],
@@ -19145,7 +19222,9 @@
           }
         },
         {
-          "arcs": [[-182, -782, 817, -780, 818, -778, 819, -736, 820, -212, -288, -272, -227, -213]],
+          "arcs": [
+            [-182, -782, 817, -780, 818, -778, 819, -736, 820, -212, -288, -272, -227, -213]
+          ],
           "type": "Polygon",
           "properties": {
             "district": "Amravati",
@@ -19158,7 +19237,13 @@
         {
           "arcs": [[-760, -794, 821, 822, 823]],
           "type": "Polygon",
-          "properties": { "district": "Surat", "dt_code": "492", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Surat",
+            "dt_code": "492",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-198, -260, -686, 824, -681, -807, -797]],
@@ -19174,7 +19259,13 @@
         {
           "arcs": [[-682, -825, -685, 825, -822, -793, -795, -805, -687, -804]],
           "type": "Polygon",
-          "properties": { "district": "Tapi", "dt_code": "493", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Tapi",
+            "dt_code": "493",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-201, 826, -208, 827, -813, 828, -244, -253, -246]],
@@ -19575,7 +19666,13 @@
         {
           "arcs": [[-898, 901, 902, 903, 904, 905]],
           "type": "Polygon",
-          "properties": { "district": "Dhemaji", "dt_code": "308", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Dhemaji",
+            "dt_code": "308",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-890, 906, 907, -895, 908, 909]],
@@ -19657,12 +19754,24 @@
         {
           "arcs": [[-938, 939, 940, 941, 942]],
           "type": "Polygon",
-          "properties": { "district": "Jorhat", "dt_code": "312", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Jorhat",
+            "dt_code": "312",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-935, 943, 944, 945, 946, 947]],
           "type": "Polygon",
-          "properties": { "district": "Mon", "dt_code": "261", "st_nm": "Nagaland", "st_code": "13", "year": "2011_c" }
+          "properties": {
+            "district": "Mon",
+            "dt_code": "261",
+            "st_nm": "Nagaland",
+            "st_code": "13",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[948, 949, 950, 951, 952, 953, 954]],
@@ -19722,17 +19831,35 @@
         {
           "arcs": [[970, 971, 972, 973, 974]],
           "type": "Polygon",
-          "properties": { "district": "Chirang", "dt_code": "320", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Chirang",
+            "dt_code": "320",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-968, 975, 976, 977, 978, -975, 979]],
           "type": "Polygon",
-          "properties": { "district": "Baksa", "dt_code": "324", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Baksa",
+            "dt_code": "324",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-950, 980, -960, 981, 982, 983, 984]],
           "type": "Polygon",
-          "properties": { "district": "Nagaon", "dt_code": "305", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Nagaon",
+            "dt_code": "305",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-973, 985, 986, 987, 988, 989]],
@@ -19748,7 +19875,13 @@
         {
           "arcs": [[-952, 990, 991, 992, -976, -967]],
           "type": "Polygon",
-          "properties": { "district": "Darrang", "dt_code": "325", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Darrang",
+            "dt_code": "325",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-947, 993, 994, 995, -964, -962]],
@@ -19764,12 +19897,24 @@
         {
           "arcs": [[-971, -979, 996, 997, 998, 999]],
           "type": "Polygon",
-          "properties": { "district": "Barpeta", "dt_code": "303", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Barpeta",
+            "dt_code": "303",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-978, 1000, -997]],
           "type": "Polygon",
-          "properties": { "district": "Nalbari", "dt_code": "323", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Nalbari",
+            "dt_code": "323",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-951, -985, 1001, 1002, 1003, -991]],
@@ -19785,7 +19930,13 @@
         {
           "arcs": [[-977, -993, 1004, 1005, 1006, 1007, 1008, -998, -1001]],
           "type": "Polygon",
-          "properties": { "district": "Kamrup", "dt_code": "321", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Kamrup",
+            "dt_code": "321",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-972, -1000, 1009, 1010, -986]],
@@ -19801,7 +19952,13 @@
         {
           "arcs": [[-987, -1011, 1011, 1012, 1013, 1014]],
           "type": "Polygon",
-          "properties": { "district": "Dhubri", "dt_code": "301", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Dhubri",
+            "dt_code": "301",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-992, -1004, 1015, -1005]],
@@ -19949,7 +20106,13 @@
         {
           "arcs": [[-17, 1067, 1068, 1069, -1054, -1031, -1063, 1070, 1071, -5]],
           "type": "Polygon",
-          "properties": { "district": "Cachar", "dt_code": "316", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Cachar",
+            "dt_code": "316",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[1072, 1073, 1074, 1075, 1076]],
@@ -20097,7 +20260,13 @@
         {
           "arcs": [[-1018, 1119, 1120, -1050, 1121, -1118]],
           "type": "Polygon",
-          "properties": { "district": "Phek", "dt_code": "266", "st_nm": "Nagaland", "st_code": "13", "year": "2011_c" }
+          "properties": {
+            "district": "Phek",
+            "dt_code": "266",
+            "st_nm": "Nagaland",
+            "st_code": "13",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1021, 1122, 1123, -1066, 1124, 1125, 1126]],
@@ -20311,7 +20480,13 @@
         {
           "arcs": [[-915, -939, -943, -956, -928]],
           "type": "Polygon",
-          "properties": { "district": "Majuli", "dt_code": "760", "st_nm": "Assam", "st_code": "18", "year": "2016_c" }
+          "properties": {
+            "district": "Majuli",
+            "dt_code": "760",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2016_c"
+          }
         },
         {
           "arcs": [[-922, -930, -961, -981, -949, 1157]],
@@ -20327,7 +20502,13 @@
         {
           "arcs": [[-983, 1158, -1027, 1159]],
           "type": "Polygon",
-          "properties": { "district": "Hojai", "dt_code": "757", "st_nm": "Assam", "st_code": "18", "year": "2015_c" }
+          "properties": {
+            "district": "Hojai",
+            "dt_code": "757",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2015_c"
+          }
         },
         {
           "arcs": [[-1013, -1022, -1127, -1151, 1160]],
@@ -20464,7 +20645,13 @@
         {
           "arcs": [[-1061, -1170, -1089, -1097, 1174, -1166]],
           "type": "Polygon",
-          "properties": { "district": "Noney", "dt_code": "771", "st_nm": "Manipur", "st_code": "14", "year": "2016_c" }
+          "properties": {
+            "district": "Noney",
+            "dt_code": "771",
+            "st_nm": "Manipur",
+            "st_code": "14",
+            "year": "2016_c"
+          }
         },
         {
           "arcs": [[-6, -1072, -1167, -1175, -1096, 1175, -9]],
@@ -20898,7 +21085,13 @@
         {
           "arcs": [[-1285, 1315, 1316, 1317, 1318, -1295]],
           "type": "Polygon",
-          "properties": { "district": "Nuh", "dt_code": "087", "st_nm": "Haryana", "st_code": "06", "year": "2011_c" }
+          "properties": {
+            "district": "Nuh",
+            "dt_code": "087",
+            "st_nm": "Haryana",
+            "st_code": "06",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1234, -1241, -1276, 1319, 1320, -1298]],
@@ -21497,7 +21690,13 @@
         {
           "arcs": [[-1456, -1502, 1505]],
           "type": "Polygon",
-          "properties": { "district": "Sheohar", "dt_code": "205", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Sheohar",
+            "dt_code": "205",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1482, 1507, 1508, 1509, 1510, 1511]],
@@ -21689,32 +21888,19 @@
         {
           "arcs": [[1573, 1574, 1575, 1576, 1577]],
           "type": "Polygon",
-          "properties": { "district": "Katihar", "dt_code": "212", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Katihar",
+            "dt_code": "212",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [
             [
-              -1487,
-              -1528,
-              1578,
-              1579,
-              1580,
-              1581,
-              1582,
-              1583,
-              1584,
-              1585,
-              1586,
-              1587,
-              1588,
-              1589,
-              1590,
-              1591,
-              1592,
-              1593,
-              1594,
-              1595,
-              1596
+              -1487, -1528, 1578, 1579, 1580, 1581, 1582, 1583, 1584, 1585, 1586, 1587, 1588, 1589,
+              1590, 1591, 1592, 1593, 1594, 1595, 1596
             ]
           ],
           "type": "Polygon",
@@ -21729,24 +21915,8 @@
         {
           "arcs": [
             [
-              -1475,
-              -1533,
-              1597,
-              -1596,
-              1598,
-              -1594,
-              1599,
-              -1592,
-              1600,
-              -1590,
-              1601,
-              1602,
-              1603,
-              1604,
-              1605,
-              1606,
-              1607,
-              -1534
+              -1475, -1533, 1597, -1596, 1598, -1594, 1599, -1592, 1600, -1590, 1601, 1602, 1603,
+              1604, 1605, 1606, 1607, -1534
             ]
           ],
           "type": "Polygon",
@@ -21816,7 +21986,13 @@
         {
           "arcs": [[-1545, 1633, 1634, 1635, 1636, 1637]],
           "type": "Polygon",
-          "properties": { "district": "Bhojpur", "dt_code": "231", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Bhojpur",
+            "dt_code": "231",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1551, 1638, 1639, 1640, 1641, -1626, 1642]],
@@ -21832,7 +22008,13 @@
         {
           "arcs": [[-1546, -1638, 1643, 1644, -1621]],
           "type": "Polygon",
-          "properties": { "district": "Buxar", "dt_code": "232", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Buxar",
+            "dt_code": "232",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[1645, 1646, 1647]],
@@ -21892,7 +22074,13 @@
         {
           "arcs": [[-1629, -1660, 1661, 1662, 1663]],
           "type": "Polygon",
-          "properties": { "district": "Saharsa", "dt_code": "214", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Saharsa",
+            "dt_code": "214",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1518, 1664, 1665, 1666, -1569]],
@@ -21963,12 +22151,24 @@
         {
           "arcs": [[-1622, -1645, 1679, 1680, -1670]],
           "type": "Polygon",
-          "properties": { "district": "Kaimur", "dt_code": "233", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Kaimur",
+            "dt_code": "233",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1637, 1681, 1682, 1683, 1684, 1685, -1680, -1644]],
           "type": "Polygon",
-          "properties": { "district": "Rohtas", "dt_code": "234", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Rohtas",
+            "dt_code": "234",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1517, 1686, 1687, 1688, 1689, 1690, 1691, -1665]],
@@ -22017,7 +22217,13 @@
         {
           "arcs": [[1705, 1706, 1707, 1708, 1709, 1710, 1711]],
           "type": "Polygon",
-          "properties": { "district": "Jamui", "dt_code": "238", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Jamui",
+            "dt_code": "238",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1555, 1712, 1713, 1714, 1715]],
@@ -22033,7 +22239,13 @@
         {
           "arcs": [[-1695, 1716, 1717, -1706, 1718, 1719]],
           "type": "Polygon",
-          "properties": { "district": "Banka", "dt_code": "225", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Banka",
+            "dt_code": "225",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1641, -1699, 1720, 1721, 1722, -1668]],
@@ -22071,12 +22283,24 @@
         {
           "arcs": [[-1709, 1733, 1734, 1735, 1736, 1737]],
           "type": "Polygon",
-          "properties": { "district": "Nawada", "dt_code": "237", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Nawada",
+            "dt_code": "237",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1736, 1738, 1739, 1740, 1741, 1742, 1743, 1744, 1745]],
           "type": "Polygon",
-          "properties": { "district": "Gaya", "dt_code": "236", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Gaya",
+            "dt_code": "236",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1606, -1703, 1746, 1747, -1729]],
@@ -22158,7 +22382,13 @@
         {
           "arcs": [[-1632, 1769, -1719, -1712, 1770, 1771]],
           "type": "Polygon",
-          "properties": { "district": "Munger", "dt_code": "226", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Munger",
+            "dt_code": "226",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1708, 1772, 1773, 1774, 1775, 1776, 1777, -1734]],
@@ -22273,7 +22503,13 @@
         {
           "arcs": [[-1751, 1805, 1806, 1807]],
           "type": "Polygon",
-          "properties": { "district": "Patan", "dt_code": "470", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Patan",
+            "dt_code": "470",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1802, 1808, 1809, 1810, 1811, 1812]],
@@ -22630,7 +22866,13 @@
         {
           "arcs": [[-733, -840, -1909, 1916, -1850, 1917]],
           "type": "Polygon",
-          "properties": { "district": "Dahod", "dt_code": "485", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Dahod",
+            "dt_code": "485",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-742, -776, -748, 1918, -1878, -1815, -1897]],
@@ -22932,7 +23174,13 @@
         {
           "arcs": [[-1636, 1954, 1955, -1744, 1956, -1682]],
           "type": "Polygon",
-          "properties": { "district": "Arwal", "dt_code": "240", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Arwal",
+            "dt_code": "240",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1745, -1956, 1957, 1958]],
@@ -22948,22 +23196,46 @@
         {
           "arcs": [[-1737, -1746, -1959, 1959, -1952, -1954]],
           "type": "Polygon",
-          "properties": { "district": "Nalanda", "dt_code": "229", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Nalanda",
+            "dt_code": "229",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1565, -1948, -1953, -1960, -1958, -1955, -1635, 1960, -1944]],
           "type": "Polygon",
-          "properties": { "district": "Patna", "dt_code": "230", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Patna",
+            "dt_code": "230",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1521, 1961, -1945, -1961, -1634, -1544, 1962]],
           "type": "Polygon",
-          "properties": { "district": "Saran", "dt_code": "219", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Saran",
+            "dt_code": "219",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1495, -1522, -1963, -1543]],
           "type": "Polygon",
-          "properties": { "district": "Siwan", "dt_code": "218", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Siwan",
+            "dt_code": "218",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1457, -1506, -1501, -1661, -1567, -1946, -1962, -1520, -1459, -1507]],
@@ -22990,12 +23262,24 @@
         {
           "arcs": [[-1965, 1966, 1967, 1968, 1969]],
           "type": "Polygon",
-          "properties": { "district": "Araria", "dt_code": "209", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Araria",
+            "dt_code": "209",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1663, 1970, 1971, -1967, -1964]],
           "type": "Polygon",
-          "properties": { "district": "Supaul", "dt_code": "208", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Supaul",
+            "dt_code": "208",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1499, 1972, -1971, -1662, -1659]],
@@ -23011,7 +23295,13 @@
         {
           "arcs": [[-1577, -1950, -1966, -1970, 1973, 1974, 1975, 1976, 1977, 1978]],
           "type": "Polygon",
-          "properties": { "district": "Purnia", "dt_code": "211", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Purnia",
+            "dt_code": "211",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1783, 1979, 1980, -1938, -1875]],
@@ -23179,7 +23469,10 @@
           }
         },
         {
-          "arcs": [[[-1515, 1997]], [[-1345, -1505, -1562, 1998, -1560, 1999, -1558, 2000, -1513, -1364]]],
+          "arcs": [
+            [[-1515, 1997]],
+            [[-1345, -1505, -1562, 1998, -1560, 1999, -1558, 2000, -1513, -1364]]
+          ],
           "type": "MultiPolygon",
           "properties": {
             "district": "Ajmer",
@@ -23245,7 +23538,12 @@
           }
         },
         {
-          "arcs": [[-1581, -2011, -1618, 2011, -1616, 2012, -1809, -1801, -1701, -1653, -1585, -2008, -1583, -2009]],
+          "arcs": [
+            [
+              -1581, -2011, -1618, 2011, -1616, 2012, -1809, -1801, -1701, -1653, -1585, -2008,
+              -1583, -2009
+            ]
+          ],
           "type": "Polygon",
           "properties": {
             "district": "Chhatarpur",
@@ -23291,7 +23589,13 @@
         {
           "arcs": [[-1479, -1571, -1752, -1808, 2014, 2015, 2016]],
           "type": "Polygon",
-          "properties": { "district": "Kutch", "dt_code": "468", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Kutch",
+            "dt_code": "468",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-836, -851, 2017, -2015, -1807, -1824, -1885]],
@@ -23307,12 +23611,24 @@
         {
           "arcs": [[-715, 2018, -1886, -1883, -1984, -1986, -1907]],
           "type": "Polygon",
-          "properties": { "district": "Kheda", "dt_code": "483", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Kheda",
+            "dt_code": "483",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-714, 2019, -1887, -2019]],
           "type": "Polygon",
-          "properties": { "district": "Anand", "dt_code": "482", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Anand",
+            "dt_code": "482",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1422, -2006, -1974, -1969, 2020]],
@@ -23339,12 +23655,24 @@
         {
           "arcs": [[2022, 2023, 2024, 2025, 2026, 2027, 2028]],
           "type": "Polygon",
-          "properties": { "district": "Leh", "dt_code": "003", "st_nm": "Ladakh", "st_code": "38", "year": "2011_c" }
+          "properties": {
+            "district": "Leh",
+            "dt_code": "003",
+            "st_nm": "Ladakh",
+            "st_code": "38",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2024, 2029, 2030, 2031, 2032]],
           "type": "Polygon",
-          "properties": { "district": "Kargil", "dt_code": "004", "st_nm": "Ladakh", "st_code": "38", "year": "2011_c" }
+          "properties": {
+            "district": "Kargil",
+            "dt_code": "004",
+            "st_nm": "Ladakh",
+            "st_code": "38",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2027, 2033, 2034, 2035]],
@@ -23745,7 +24073,13 @@
         {
           "arcs": [[-2143, 2170, 2171, 2172, 2173, 2174]],
           "type": "Polygon",
-          "properties": { "district": "Moga", "dt_code": "042", "st_nm": "Punjab", "st_code": "03", "year": "2011_c" }
+          "properties": {
+            "district": "Moga",
+            "dt_code": "042",
+            "st_nm": "Punjab",
+            "st_code": "03",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2142, -2164, -2153, 2175, 2176, 2177, -2171]],
@@ -23959,7 +24293,13 @@
         {
           "arcs": [[-2222, 2244, 2245, -2226, -2224]],
           "type": "Polygon",
-          "properties": { "district": "Mansa", "dt_code": "047", "st_nm": "Punjab", "st_code": "03", "year": "2011_c" }
+          "properties": {
+            "district": "Mansa",
+            "dt_code": "047",
+            "st_nm": "Punjab",
+            "st_code": "03",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2229, 2246, -2236, 2247, 2248, -2231, 2249]],
@@ -24019,7 +24359,13 @@
         {
           "arcs": [[-2212, -2227, -2246, 2259, 2260]],
           "type": "Polygon",
-          "properties": { "district": "Sirsa", "dt_code": "079", "st_nm": "Haryana", "st_code": "06", "year": "2011_c" }
+          "properties": {
+            "district": "Sirsa",
+            "dt_code": "079",
+            "st_nm": "Haryana",
+            "st_code": "06",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1215, 2261, -2242, -2166, -2213, -2261, 2262, 2263, 2264]],
@@ -24057,7 +24403,13 @@
         {
           "arcs": [[-2220, -2233, -2259, -2268, 2270, 2271, 2272, 2273, 2274]],
           "type": "Polygon",
-          "properties": { "district": "Jind", "dt_code": "077", "st_nm": "Haryana", "st_code": "06", "year": "2011_c" }
+          "properties": {
+            "district": "Jind",
+            "dt_code": "077",
+            "st_nm": "Haryana",
+            "st_code": "06",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2221, -2275, 2275, -2263, -2260, -2245]],
@@ -24095,7 +24447,13 @@
         {
           "arcs": [[-2264, -2276, -2274, 2284, 2285]],
           "type": "Polygon",
-          "properties": { "district": "Hisar", "dt_code": "080", "st_nm": "Haryana", "st_code": "06", "year": "2011_c" }
+          "properties": {
+            "district": "Hisar",
+            "dt_code": "080",
+            "st_nm": "Haryana",
+            "st_code": "06",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2256, -2270, 2286, 2287, -2279]],
@@ -24452,64 +24810,10 @@
         {
           "arcs": [
             [
-              137,
-              138,
-              139,
-              140,
-              147,
-              148,
-              149,
-              150,
-              164,
-              165,
-              114,
-              162,
-              163,
-              110,
-              152,
-              159,
-              154,
-              160,
-              161,
-              130,
-              170,
-              133,
-              134,
-              171,
-              172,
-              167,
-              168,
-              169,
-              128,
-              123,
-              118,
-              105,
-              88,
-              89,
-              90,
-              91,
-              92,
-              93,
-              77,
-              78,
-              79,
-              80,
-              75,
-              64,
-              48,
-              49,
-              50,
-              51,
-              52,
-              53,
-              178,
-              174,
-              177,
-              39,
-              40,
-              41,
-              43,
-              180
+              137, 138, 139, 140, 147, 148, 149, 150, 164, 165, 114, 162, 163, 110, 152, 159, 154,
+              160, 161, 130, 170, 133, 134, 171, 172, 167, 168, 169, 128, 123, 118, 105, 88, 89, 90,
+              91, 92, 93, 77, 78, 79, 80, 75, 64, 48, 49, 50, 51, 52, 53, 178, 174, 177, 39, 40, 41,
+              43, 180
             ]
           ],
           "type": "Polygon",
@@ -24519,107 +24823,14 @@
         {
           "arcs": [
             [
-              -199,
-              796,
-              797,
-              730,
-              731,
-              732,
-              -1918,
-              -1849,
-              -1848,
-              1861,
-              1767,
-              1714,
-              1715,
-              -1555,
-              1712,
-              1768,
-              -1611,
-              -1756,
-              -1755,
-              -1754,
-              -1753,
-              1732,
-              -1674,
-              1607,
-              1534,
-              1535,
-              -1490,
-              -1452,
-              -1451,
-              -1467,
-              -1408,
-              -1407,
-              -1466,
-              1485,
-              1486,
-              -1597,
-              -1596,
-              -1595,
-              -1594,
-              -1593,
-              -1592,
-              -1591,
-              -1590,
-              -1589,
-              -1705,
-              1602,
-              -1704,
-              1604,
-              -1703,
-              -1702,
-              -1701,
-              1653,
-              -1700,
-              -1587,
-              -1586,
-              -1585,
-              -2008,
-              -1583,
-              -2009,
-              -1581,
-              -2011,
-              -1618,
-              -1617,
-              -1616,
-              -1615,
-              -1614,
-              -1669,
-              -1668,
-              -1641,
-              -1699,
-              -1698,
-              -1764,
-              1781,
-              1782,
-              1783,
-              1793,
-              1827,
-              -1874,
-              -872,
-              -871,
-              -833,
-              -775,
-              -774,
-              -773,
-              789,
-              -190,
-              -194,
-              787,
-              724,
-              734,
-              735,
-              -820,
-              777,
-              -819,
-              779,
-              -818,
-              781,
-              181,
-              182,
-              183,
-              -200
+              -199, 796, 797, 730, 731, 732, -1918, -1849, -1848, 1861, 1767, 1714, 1715, -1555,
+              1712, 1768, -1611, -1756, -1755, -1754, -1753, 1732, -1674, 1607, 1534, 1535, -1490,
+              -1452, -1451, -1467, -1408, -1407, -1466, 1485, 1486, -1597, -1596, -1595, -1594,
+              -1593, -1592, -1591, -1590, -1589, -1705, 1602, -1704, 1604, -1703, -1702, -1701,
+              1653, -1700, -1587, -1586, -1585, -2008, -1583, -2009, -1581, -2011, -1618, -1617,
+              -1616, -1615, -1614, -1669, -1668, -1641, -1699, -1698, -1764, 1781, 1782, 1783, 1793,
+              1827, -1874, -872, -871, -833, -775, -774, -773, 789, -190, -194, 787, 724, 734, 735,
+              -820, 777, -819, 779, -818, 781, 181, 182, 183, -200
             ]
           ],
           "type": "Polygon",
@@ -24629,75 +24840,11 @@
         {
           "arcs": [
             [
-              280,
-              281,
-              284,
-              334,
-              335,
-              336,
-              337,
-              338,
-              366,
-              368,
-              369,
-              375,
-              376,
-              399,
-              400,
-              402,
-              -416,
-              423,
-              424,
-              390,
-              865,
-              355,
-              880,
-              578,
-              691,
-              -226,
-              -691,
-              -224,
-              -223,
-              257,
-              258,
-              -686,
-              824,
-              -681,
-              -683,
-              803,
-              -688,
-              804,
-              -796,
-              -792,
-              805,
-              -731,
-              -798,
-              -797,
-              198,
-              199,
-              -184,
-              -183,
-              -182,
-              -782,
-              817,
-              -780,
-              818,
-              -778,
-              819,
-              -736,
-              -735,
-              -725,
-              -788,
-              193,
-              189,
-              186,
-              263,
-              264,
-              265,
-              266,
-              267,
-              268,
-              269
+              280, 281, 284, 334, 335, 336, 337, 338, 366, 368, 369, 375, 376, 399, 400, 402, -416,
+              423, 424, 390, 865, 355, 880, 578, 691, -226, -691, -224, -223, 257, 258, -686, 824,
+              -681, -683, 803, -688, 804, -796, -792, 805, -731, -798, -797, 198, 199, -184, -183,
+              -182, -782, 817, -780, 818, -778, 819, -736, -735, -725, -788, 193, 189, 186, 263,
+              264, 265, 266, 267, 268, 269
             ]
           ],
           "type": "Polygon",
@@ -24707,53 +24854,10 @@
         {
           "arcs": [
             [
-              -327,
-              -326,
-              -325,
-              -324,
-              -360,
-              -375,
-              -374,
-              -434,
-              -709,
-              -708,
-              -597,
-              864,
-              -267,
-              -266,
-              -265,
-              -264,
-              -187,
-              -790,
-              772,
-              773,
-              774,
-              832,
-              870,
-              871,
-              1873,
-              -1828,
-              -1794,
-              -1784,
-              -1783,
-              -1782,
-              -1763,
-              -1800,
-              -1858,
-              -1916,
-              -1915,
-              1934,
-              -766,
-              -765,
-              -814,
-              -828,
-              207,
-              -827,
-              200,
-              201,
-              -249,
-              -311,
-              -328
+              -327, -326, -325, -324, -360, -375, -374, -434, -709, -708, -597, 864, -267, -266,
+              -265, -264, -187, -790, 772, 773, 774, 832, 870, 871, 1873, -1828, -1794, -1784,
+              -1783, -1782, -1763, -1800, -1858, -1916, -1915, 1934, -766, -765, -814, -828, 207,
+              -827, 200, 201, -249, -311, -328
             ]
           ],
           "type": "Polygon",
@@ -24764,57 +24868,10 @@
           "arcs": [
             [
               [
-                760,
-                712,
-                2019,
-                1887,
-                854,
-                672,
-                840,
-                841,
-                842,
-                856,
-                785,
-                862,
-                859,
-                860,
-                2021,
-                2016,
-                -1479,
-                -1571,
-                -1570,
-                -1667,
-                -1666,
-                -1692,
-                -1691,
-                -1840,
-                -1839,
-                -1851,
-                -1850,
-                1917,
-                -733,
-                -732,
-                -806,
-                791,
-                795,
-                -805,
-                687,
-                -804,
-                682,
-                680,
-                -825,
-                685,
-                -259,
-                -258,
-                222,
-                223,
-                224,
-                225,
-                218,
-                219,
-                220,
-                876,
-                823
+                760, 712, 2019, 1887, 854, 672, 840, 841, 842, 856, 785, 862, 859, 860, 2021, 2016,
+                -1479, -1571, -1570, -1667, -1666, -1692, -1691, -1840, -1839, -1851, -1850, 1917,
+                -733, -732, -806, 791, 795, -805, 687, -804, 682, 680, -825, 685, -259, -258, 222,
+                223, 224, 225, 218, 219, 220, 876, 823
               ]
             ],
             [[852]]
@@ -24826,48 +24883,9 @@
         {
           "arcs": [
             [
-              755,
-              756,
-              757,
-              752,
-              809,
-              -720,
-              -752,
-              810,
-              231,
-              689,
-              312,
-              314,
-              692,
-              -362,
-              -361,
-              331,
-              332,
-              356,
-              357,
-              371,
-              372,
-              373,
-              374,
-              359,
-              323,
-              324,
-              325,
-              326,
-              327,
-              310,
-              248,
-              -202,
-              -201,
-              826,
-              -208,
-              827,
-              813,
-              764,
-              765,
-              766,
-              767,
-              807
+              755, 756, 757, 752, 809, -720, -752, 810, 231, 689, 312, 314, 692, -362, -361, 331,
+              332, 356, 357, 371, 372, 373, 374, 359, 323, 324, 325, 326, 327, 310, 248, -202, -201,
+              826, -208, 827, 813, 764, 765, 766, 767, 807
             ]
           ],
           "type": "Polygon",
@@ -24877,52 +24895,9 @@
         {
           "arcs": [
             [
-              -41,
-              -40,
-              -178,
-              -175,
-              -179,
-              -54,
-              -509,
-              -499,
-              476,
-              477,
-              478,
-              479,
-              480,
-              -461,
-              451,
-              -438,
-              446,
-              447,
-              448,
-              445,
-              427,
-              428,
-              429,
-              405,
-              406,
-              555,
-              556,
-              432,
-              433,
-              -373,
-              -372,
-              -358,
-              -357,
-              -333,
-              -332,
-              360,
-              361,
-              362,
-              364,
-              379,
-              430,
-              557,
-              408,
-              425,
-              441,
-              483
+              -41, -40, -178, -175, -179, -54, -509, -499, 476, 477, 478, 479, 480, -461, 451, -438,
+              446, 447, 448, 445, 427, 428, 429, 405, 406, 555, 556, 432, 433, -373, -372, -358,
+              -357, -333, -332, 360, 361, 362, 364, 379, 430, 557, 408, 425, 441, 483
             ],
             [434]
           ],
@@ -24933,56 +24908,10 @@
         {
           "arcs": [
             [
-              435,
-              436,
-              437,
-              -452,
-              460,
-              -481,
-              -480,
-              -479,
-              -478,
-              -477,
-              498,
-              508,
-              -53,
-              -52,
-              -51,
-              -50,
-              -49,
-              -65,
-              -76,
-              -81,
-              522,
-              -530,
-              520,
-              521,
-              -517,
-              513,
-              514,
-              494,
-              469,
-              470,
-              -458,
-              414,
-              415,
-              -403,
-              -401,
-              -400,
-              -377,
-              -376,
-              -370,
-              -369,
-              -367,
-              -339,
-              381,
-              382,
-              392,
-              393,
-              394,
-              395,
-              396,
-              416
+              435, 436, 437, -452, 460, -481, -480, -479, -478, -477, 498, 508, -53, -52, -51, -50,
+              -49, -65, -76, -81, 522, -530, 520, 521, -517, 513, 514, 494, 469, 470, -458, 414,
+              415, -403, -401, -400, -377, -376, -370, -369, -367, -339, 381, 382, 392, 393, 394,
+              395, 396, 416
             ]
           ],
           "type": "Polygon",
@@ -24998,42 +24927,9 @@
         {
           "arcs": [
             [
-              -80,
-              -79,
-              -78,
-              -94,
-              -93,
-              -92,
-              -91,
-              -90,
-              -89,
-              -106,
-              -119,
-              -124,
-              -129,
-              -170,
-              -169,
-              -168,
-              -173,
-              -172,
-              -135,
-              554,
-              553,
-              549,
-              545,
-              538,
-              534,
-              531,
-              699,
-              700,
-              701,
-              518,
-              -514,
-              516,
-              -522,
-              -521,
-              529,
-              -523
+              -80, -79, -78, -94, -93, -92, -91, -90, -89, -106, -119, -124, -129, -170, -169, -168,
+              -173, -172, -135, 554, 553, 549, 545, 538, 534, 531, 699, 700, 701, 518, -514, 516,
+              -522, -521, 529, -523
             ],
             [702]
           ],
@@ -25044,42 +24940,9 @@
         {
           "arcs": [
             [
-              -270,
-              -269,
-              -268,
-              -865,
-              596,
-              707,
-              708,
-              -433,
-              -557,
-              -556,
-              -407,
-              -406,
-              -430,
-              -429,
-              -428,
-              -446,
-              -449,
-              -448,
-              -447,
-              -437,
-              -436,
-              -417,
-              -397,
-              -396,
-              -395,
-              -394,
-              -393,
-              -383,
-              -382,
-              -338,
-              -337,
-              -336,
-              -335,
-              -285,
-              -282,
-              -281
+              -270, -269, -268, -865, 596, 707, 708, -433, -557, -556, -407, -406, -430, -429, -428,
+              -446, -449, -448, -447, -437, -436, -417, -397, -396, -395, -394, -393, -383, -382,
+              -338, -337, -336, -335, -285, -282, -281
             ]
           ],
           "type": "Polygon",
@@ -25092,57 +24955,10 @@
             [[661]],
             [
               [
-                750,
-                751,
-                719,
-                -810,
-                -753,
-                844,
-                1891,
-                1892,
-                1893,
-                -1866,
-                -1863,
-                -1845,
-                -1844,
-                -1835,
-                1787,
-                -1779,
-                -1765,
-                1760,
-                -1676,
-                1651,
-                -1574,
-                -1578,
-                -1979,
-                2003,
-                -1977,
-                2004,
-                -1975,
-                2005,
-                1421,
-                1422,
-                -1379,
-                -1383,
-                -1382,
-                -1385,
-                1996,
-                1436,
-                1995,
-                -989,
-                -988,
-                -1015,
-                2001,
-                1439,
-                1419,
-                2002,
-                1645,
-                1649,
-                1756,
-                1830,
-                1924,
-                665,
-                1940
+                750, 751, 719, -810, -753, 844, 1891, 1892, 1893, -1866, -1863, -1845, -1844, -1835,
+                1787, -1779, -1765, 1760, -1676, 1651, -1574, -1578, -1979, 2003, -1977, 2004,
+                -1975, 2005, 1421, 1422, -1379, -1383, -1382, -1385, 1996, 1436, 1995, -989, -988,
+                -1015, 2001, 1439, 1419, 2002, 1645, 1649, 1756, 1830, 1924, 665, 1940
               ]
             ],
             [[666]],
@@ -25155,7 +24971,11 @@
         {
           "arcs": [[[-225, 690]], [[-220, 878]], [[-842, 879]]],
           "type": "MultiPolygon",
-          "properties": { "st_nm": "Dadra and Nagar Haveli and Daman and Diu", "st_code": "26", "year": "2011_c" },
+          "properties": {
+            "st_nm": "Dadra and Nagar Haveli and Daman and Diu",
+            "st_code": "26",
+            "year": "2011_c"
+          },
           "id": "Dadra and Nagar Haveli and Daman and Diu"
         },
         {
@@ -25179,39 +24999,9 @@
         {
           "arcs": [
             [
-              -904,
-              -931,
-              920,
-              921,
-              -1158,
-              -955,
-              -954,
-              -970,
-              1145,
-              916,
-              1141,
-              1138,
-              887,
-              1190,
-              1178,
-              1185,
-              1187,
-              892,
-              906,
-              931,
-              1162,
-              -945,
-              -1157,
-              -912,
-              -911,
-              -896,
-              -895,
-              -894,
-              -901,
-              -900,
-              -899,
-              -906,
-              -905
+              -904, -931, 920, 921, -1158, -955, -954, -970, 1145, 916, 1141, 1138, 887, 1190, 1178,
+              1185, 1187, 892, 906, 931, 1162, -945, -1157, -912, -911, -896, -895, -894, -901,
+              -900, -899, -906, -905
             ]
           ],
           "type": "Polygon",
@@ -25221,71 +25011,11 @@
         {
           "arcs": [
             [
-              1156,
-              -944,
-              934,
-              935,
-              936,
-              939,
-              940,
-              956,
-              957,
-              -1130,
-              -1044,
-              1028,
-              1029,
-              -1063,
-              1070,
-              1071,
-              -5,
-              -17,
-              -16,
-              -29,
-              -28,
-              1078,
-              1079,
-              1069,
-              -1054,
-              1031,
-              1032,
-              -1147,
-              -1023,
-              1002,
-              1015,
-              1005,
-              1006,
-              1007,
-              1019,
-              1020,
-              -1127,
-              -1151,
-              1160,
-              1013,
-              1014,
-              987,
-              988,
-              989,
-              973,
-              979,
-              968,
-              969,
-              953,
-              954,
-              1157,
-              -922,
-              -921,
-              930,
-              903,
-              904,
-              905,
-              898,
-              899,
-              900,
-              893,
-              894,
-              895,
-              910,
-              911
+              1156, -944, 934, 935, 936, 939, 940, 956, 957, -1130, -1044, 1028, 1029, -1063, 1070,
+              1071, -5, -17, -16, -29, -28, 1078, 1079, 1069, -1054, 1031, 1032, -1147, -1023, 1002,
+              1015, 1005, 1006, 1007, 1019, 1020, -1127, -1151, 1160, 1013, 1014, 987, 988, 989,
+              973, 979, 968, 969, 953, 954, 1157, -922, -921, 930, 903, 904, 905, 898, 899, 900,
+              893, 894, 895, 910, 911
             ]
           ],
           "type": "Polygon",
@@ -25295,27 +25025,8 @@
         {
           "arcs": [
             [
-              1016,
-              1119,
-              1120,
-              -1050,
-              -1049,
-              1046,
-              1047,
-              -1029,
-              1043,
-              1129,
-              -958,
-              -957,
-              -941,
-              -940,
-              -937,
-              -936,
-              -935,
-              943,
-              944,
-              945,
-              993
+              1016, 1119, 1120, -1050, -1049, 1046, 1047, -1029, 1043, 1129, -958, -957, -941, -940,
+              -937, -936, -935, 943, 944, 945, 993
             ]
           ],
           "type": "Polygon",
@@ -25325,27 +25036,8 @@
         {
           "arcs": [
             [
-              1147,
-              1057,
-              1148,
-              1064,
-              1124,
-              1149,
-              1150,
-              1126,
-              -1021,
-              -1020,
-              -1008,
-              -1007,
-              -1006,
-              -1016,
-              -1003,
-              1022,
-              1146,
-              -1033,
-              -1032,
-              1053,
-              1054
+              1147, 1057, 1148, 1064, 1124, 1149, 1150, 1126, -1021, -1020, -1008, -1007, -1006,
+              -1016, -1003, 1022, 1146, -1033, -1032, 1053, 1054
             ]
           ],
           "type": "Polygon",
@@ -25354,7 +25046,10 @@
         },
         {
           "arcs": [
-            [1036, 1172, 1092, 1094, 1175, -9, -6, -1072, -1071, 1062, -1030, -1048, -1047, 1048, 1049, -1121, 1173]
+            [
+              1036, 1172, 1092, 1094, 1175, -9, -6, -1072, -1071, 1062, -1030, -1048, -1047, 1048,
+              1049, -1121, 1173
+            ]
           ],
           "type": "Polygon",
           "properties": { "st_nm": "Manipur", "st_code": "14" },
@@ -25367,113 +25062,35 @@
           "id": "Tripura"
         },
         {
-          "arcs": [[[1194, 1199]], [[1195]], [[1196]], [[1197]], [[1198]], [[1200]], [[1201]], [[1202]]],
+          "arcs": [
+            [[1194, 1199]],
+            [[1195]],
+            [[1196]],
+            [[1197]],
+            [[1198]],
+            [[1200]],
+            [[1201]],
+            [[1202]]
+          ],
           "type": "MultiPolygon",
-          "properties": { "st_nm": "Andaman and Nicobar Islands", "st_code": "35", "year": "2011_c" },
+          "properties": {
+            "st_nm": "Andaman and Nicobar Islands",
+            "st_code": "35",
+            "year": "2011_c"
+          },
           "id": "Andaman and Nicobar Islands"
         },
         {
           "arcs": [
             [
-              -2295,
-              -2294,
-              1236,
-              1237,
-              1238,
-              1271,
-              1310,
-              1346,
-              2310,
-              1398,
-              1404,
-              -1391,
-              -1390,
-              1426,
-              1493,
-              1494,
-              1542,
-              1543,
-              1544,
-              1545,
-              1620,
-              1621,
-              1669,
-              -1681,
-              -1686,
-              1761,
-              1762,
-              1763,
-              1697,
-              1698,
-              1640,
-              1667,
-              1668,
-              1613,
-              1614,
-              1615,
-              1616,
-              1617,
-              2010,
-              1580,
-              2008,
-              1582,
-              2007,
-              1584,
-              1585,
-              1586,
-              1699,
-              -1654,
-              1700,
-              1701,
-              1702,
-              -1605,
-              1703,
-              -1603,
-              1704,
-              1588,
-              1589,
-              1590,
-              1591,
-              1592,
-              1593,
-              1594,
-              1595,
-              1596,
-              -1487,
-              -1486,
-              1465,
-              1406,
-              1407,
-              1408,
-              -1358,
-              1341,
-              -1317,
-              -1325,
-              -1324,
-              1264,
-              1265,
-              1266,
-              -1257,
-              -1256,
-              1987,
-              -1244,
-              -1260,
-              -1221,
-              -1220,
-              -2298,
-              -2290,
-              -2289,
-              -2266,
-              2240,
-              -2234,
-              -2190,
-              -2188,
-              2237,
-              -2254,
-              -2253,
-              -2257,
-              2278,
-              2279
+              -2295, -2294, 1236, 1237, 1238, 1271, 1310, 1346, 2310, 1398, 1404, -1391, -1390,
+              1426, 1493, 1494, 1542, 1543, 1544, 1545, 1620, 1621, 1669, -1681, -1686, 1761, 1762,
+              1763, 1697, 1698, 1640, 1667, 1668, 1613, 1614, 1615, 1616, 1617, 2010, 1580, 2008,
+              1582, 2007, 1584, 1585, 1586, 1699, -1654, 1700, 1701, 1702, -1605, 1703, -1603, 1704,
+              1588, 1589, 1590, 1591, 1592, 1593, 1594, 1595, 1596, -1487, -1486, 1465, 1406, 1407,
+              1408, -1358, 1341, -1317, -1325, -1324, 1264, 1265, 1266, -1257, -1256, 1987, -1244,
+              -1260, -1221, -1220, -2298, -2290, -2289, -2266, 2240, -2234, -2190, -2188, 2237,
+              -2254, -2253, -2257, 2278, 2279
             ]
           ],
           "type": "Polygon",
@@ -25483,63 +25100,11 @@
         {
           "arcs": [
             [
-              -1294,
-              -1293,
-              -1292,
-              -1296,
-              -1319,
-              -1318,
-              -1342,
-              1357,
-              -1409,
-              1466,
-              1450,
-              1451,
-              1489,
-              -1536,
-              -1535,
-              -1608,
-              1673,
-              -1733,
-              1752,
-              1753,
-              1754,
-              1755,
-              1610,
-              -1769,
-              -1713,
-              1554,
-              -1716,
-              -1715,
-              -1768,
-              -1862,
-              1847,
-              1848,
-              1849,
-              1850,
-              1838,
-              1839,
-              1690,
-              1691,
-              1665,
-              1666,
-              1569,
-              1570,
-              1478,
-              1479,
-              1309,
-              2301,
-              2243,
-              -2167,
-              -2166,
-              -2213,
-              -2261,
-              2262,
-              2263,
-              2264,
-              1209,
-              1279,
-              1280
+              -1294, -1293, -1292, -1296, -1319, -1318, -1342, 1357, -1409, 1466, 1450, 1451, 1489,
+              -1536, -1535, -1608, 1673, -1733, 1752, 1753, 1754, 1755, 1610, -1769, -1713, 1554,
+              -1716, -1715, -1768, -1862, 1847, 1848, 1849, 1850, 1838, 1839, 1690, 1691, 1665,
+              1666, 1569, 1570, 1478, 1479, 1309, 2301, 2243, -2167, -2166, -2213, -2261, 2262,
+              2263, 2264, 1209, 1279, 1280
             ]
           ],
           "type": "Polygon",
@@ -25549,24 +25114,8 @@
         {
           "arcs": [
             [
-              1243,
-              -1988,
-              1255,
-              1256,
-              -1267,
-              -1288,
-              1277,
-              1278,
-              1270,
-              1258,
-              -1228,
-              -1227,
-              -1226,
-              1990,
-              1223,
-              1219,
-              1220,
-              1259
+              1243, -1988, 1255, 1256, -1267, -1288, 1277, 1278, 1270, 1258, -1228, -1227, -1226,
+              1990, 1223, 1219, 1220, 1259
             ]
           ],
           "type": "Polygon",
@@ -25576,62 +25125,11 @@
         {
           "arcs": [
             [
-              -1224,
-              -1991,
-              1225,
-              1226,
-              1227,
-              -1259,
-              -1271,
-              -1279,
-              -1278,
-              1287,
-              -1266,
-              -1265,
-              1323,
-              1324,
-              1316,
-              1317,
-              1318,
-              1295,
-              1291,
-              1292,
-              1293,
-              -1281,
-              -1280,
-              -1210,
-              -2265,
-              -2264,
-              -2263,
-              2260,
-              -2212,
-              -2227,
-              -2246,
-              -2245,
-              -2221,
-              -2220,
-              -2233,
-              -2232,
-              -2231,
-              -2230,
-              -2229,
-              -2228,
-              -2199,
-              -2198,
-              -2197,
-              -2196,
-              -2209,
-              -2194,
-              -2161,
-              -2193,
-              -2192,
-              -2191,
-              2233,
-              -2241,
-              2265,
-              2288,
-              2289,
-              2297
+              -1224, -1991, 1225, 1226, 1227, -1259, -1271, -1279, -1278, 1287, -1266, -1265, 1323,
+              1324, 1316, 1317, 1318, 1295, 1291, 1292, 1293, -1281, -1280, -1210, -2265, -2264,
+              -2263, 2260, -2212, -2227, -2246, -2245, -2221, -2220, -2233, -2232, -2231, -2230,
+              -2229, -2228, -2199, -2198, -2197, -2196, -2209, -2194, -2161, -2193, -2192, -2191,
+              2233, -2241, 2265, 2288, 2289, 2297
             ]
           ],
           "type": "Polygon",
@@ -25647,53 +25145,10 @@
         {
           "arcs": [
             [
-              1389,
-              1390,
-              1391,
-              1453,
-              1497,
-              1972,
-              1971,
-              1967,
-              2020,
-              -1422,
-              -2006,
-              1974,
-              -2005,
-              1976,
-              -2004,
-              1978,
-              1577,
-              1573,
-              1574,
-              -1679,
-              -1696,
-              -1695,
-              1716,
-              1717,
-              1706,
-              1707,
-              1733,
-              1734,
-              1738,
-              1739,
-              1740,
-              1741,
-              -1790,
-              1683,
-              1684,
-              1685,
-              1680,
-              -1670,
-              -1622,
-              -1621,
-              -1546,
-              -1545,
-              -1544,
-              -1543,
-              -1495,
-              -1494,
-              -1427
+              1389, 1390, 1391, 1453, 1497, 1972, 1971, 1967, 2020, -1422, -2006, 1974, -2005, 1976,
+              -2004, 1978, 1577, 1573, 1574, -1679, -1696, -1695, 1716, 1717, 1706, 1707, 1733,
+              1734, 1738, 1739, 1740, 1741, -1790, 1683, 1684, 1685, 1680, -1670, -1622, -1621,
+              -1546, -1545, -1544, -1543, -1495, -1494, -1427
             ]
           ],
           "type": "Polygon",
@@ -25703,50 +25158,10 @@
         {
           "arcs": [
             [
-              1778,
-              -1788,
-              1834,
-              1843,
-              1844,
-              1862,
-              1865,
-              -1894,
-              -1893,
-              -1892,
-              -845,
-              -758,
-              -757,
-              -756,
-              -808,
-              -768,
-              -767,
-              -1935,
-              1914,
-              1915,
-              1857,
-              1799,
-              -1762,
-              -1685,
-              -1684,
-              1789,
-              -1742,
-              -1741,
-              -1740,
-              -1739,
-              -1735,
-              -1734,
-              -1708,
-              -1707,
-              -1718,
-              -1717,
-              1694,
-              1695,
-              1678,
-              -1575,
-              -1652,
-              1675,
-              -1761,
-              1764
+              1778, -1788, 1834, 1843, 1844, 1862, 1865, -1894, -1893, -1892, -845, -758, -757,
+              -756, -808, -768, -767, -1935, 1914, 1915, 1857, 1799, -1762, -1685, -1684, 1789,
+              -1742, -1741, -1740, -1739, -1735, -1734, -1708, -1707, -1718, -1717, 1694, 1695,
+              1678, -1575, -1652, 1675, -1761, 1764
             ]
           ],
           "type": "Polygon",
@@ -25762,24 +25177,8 @@
         {
           "arcs": [
             [
-              -2025,
-              -2033,
-              -2032,
-              -2031,
-              2054,
-              2055,
-              2082,
-              -2093,
-              2097,
-              2098,
-              2307,
-              2095,
-              2313,
-              2067,
-              2312,
-              -2028,
-              -2027,
-              -2026
+              -2025, -2033, -2032, -2031, 2054, 2055, 2082, -2093, 2097, 2098, 2307, 2095, 2313,
+              2067, 2312, -2028, -2027, -2026
             ]
           ],
           "type": "Polygon",
@@ -25789,32 +25188,8 @@
         {
           "arcs": [
             [
-              2135,
-              2136,
-              -2189,
-              2189,
-              2190,
-              2191,
-              2192,
-              2160,
-              2161,
-              -2150,
-              -2149,
-              2134,
-              -2117,
-              2111,
-              -2103,
-              2112,
-              2091,
-              2092,
-              -2083,
-              -2056,
-              -2055,
-              -2030,
-              -2023,
-              2085,
-              2129,
-              2130
+              2135, 2136, -2189, 2189, 2190, 2191, 2192, 2160, 2161, -2150, -2149, 2134, -2117,
+              2111, -2103, 2112, 2091, 2092, -2083, -2056, -2055, -2030, -2023, 2085, 2129, 2130
             ]
           ],
           "type": "Polygon",
@@ -25824,43 +25199,9 @@
         {
           "arcs": [
             [
-              -2092,
-              -2113,
-              2102,
-              -2112,
-              2116,
-              -2135,
-              2148,
-              2149,
-              -2162,
-              2193,
-              2194,
-              2195,
-              2196,
-              2197,
-              2198,
-              2227,
-              2228,
-              2229,
-              2230,
-              2231,
-              2232,
-              2219,
-              2220,
-              2244,
-              2245,
-              2226,
-              2211,
-              2212,
-              2165,
-              2166,
-              2167,
-              2303,
-              2147,
-              2124,
-              2106,
-              2305,
-              -2098
+              -2092, -2113, 2102, -2112, 2116, -2135, 2148, 2149, -2162, 2193, 2194, 2195, 2196,
+              2197, 2198, 2227, 2228, 2229, 2230, 2231, 2232, 2219, 2220, 2244, 2245, 2226, 2211,
+              2212, 2165, 2166, 2167, 2303, 2147, 2124, 2106, 2305, -2098
             ]
           ],
           "type": "Polygon",
@@ -25870,26 +25211,8 @@
         {
           "arcs": [
             [
-              2214,
-              2291,
-              2295,
-              -1238,
-              -1237,
-              2293,
-              2294,
-              -2280,
-              -2279,
-              2256,
-              2252,
-              2253,
-              -2238,
-              2187,
-              2188,
-              -2137,
-              -2136,
-              -2131,
-              2154,
-              2178
+              2214, 2291, 2295, -1238, -1237, 2293, 2294, -2280, -2279, 2256, 2252, 2253, -2238,
+              2187, 2188, -2137, -2136, -2131, 2154, 2178
             ]
           ],
           "type": "Polygon",
@@ -25971,12 +25294,24 @@
         {
           "arcs": [[-3, -25, 25, 26, 27, 28, -15]],
           "type": "Polygon",
-          "properties": { "district": "Mamit", "dt_code": "266", "st_nm": "Mizoram", "st_code": "15", "year": "2011_c" }
+          "properties": {
+            "district": "Mamit",
+            "dt_code": "266",
+            "st_nm": "Mizoram",
+            "st_code": "15",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-18, -23, 29, 30]],
           "type": "Polygon",
-          "properties": { "district": "Saiha", "dt_code": "267", "st_nm": "Mizoram", "st_code": "15", "year": "2011_c" }
+          "properties": {
+            "district": "Saiha",
+            "dt_code": "267",
+            "st_nm": "Mizoram",
+            "st_code": "15",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1, 31, -12, 32, 33, -21]],
@@ -26585,24 +25920,8 @@
         {
           "arcs": [
             [
-              -1475,
-              -1533,
-              1597,
-              -1596,
-              1598,
-              -1594,
-              1599,
-              -1592,
-              1600,
-              -1590,
-              1601,
-              1602,
-              1603,
-              1604,
-              1605,
-              1606,
-              1607,
-              -1534
+              -1475, -1533, 1597, -1596, 1598, -1594, 1599, -1592, 1600, -1590, 1601, 1602, 1603,
+              1604, 1605, 1606, 1607, -1534
             ]
           ],
           "type": "Polygon",
@@ -26989,7 +26308,12 @@
           }
         },
         {
-          "arcs": [[-1581, -2011, -1618, 2011, -1616, 2012, -1809, -1801, -1701, -1653, -1585, -2008, -1583, -2009]],
+          "arcs": [
+            [
+              -1581, -2011, -1618, 2011, -1616, 2012, -1809, -1801, -1701, -1653, -1585, -2008,
+              -1583, -2009
+            ]
+          ],
           "type": "Polygon",
           "properties": {
             "district": "Chhatarpur",
@@ -27357,7 +26681,9 @@
           }
         },
         {
-          "arcs": [[-182, -782, 817, -780, 818, -778, 819, -736, 820, -212, -288, -272, -227, -213]],
+          "arcs": [
+            [-182, -782, 817, -780, 818, -778, 819, -736, 820, -212, -288, -272, -227, -213]
+          ],
           "type": "Polygon",
           "properties": {
             "district": "Amravati",
@@ -27754,7 +27080,13 @@
         {
           "arcs": [[[680, 681, 682]], [[-259, 683, 684, 685]]],
           "type": "MultiPolygon",
-          "properties": { "district": "Dang", "dt_code": "489", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Dang",
+            "dt_code": "489",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[709, 710, 711, 712, 713, 714, 715]],
@@ -27803,12 +27135,24 @@
         {
           "arcs": [[-760, -794, 821, 822, 823]],
           "type": "Polygon",
-          "properties": { "district": "Surat", "dt_code": "492", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Surat",
+            "dt_code": "492",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-682, -825, -685, 825, -822, -793, -795, -805, -687, -804]],
           "type": "Polygon",
-          "properties": { "district": "Tapi", "dt_code": "493", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Tapi",
+            "dt_code": "493",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-671, 834, 835, 836, 837]],
@@ -27923,7 +27267,13 @@
         {
           "arcs": [[-1751, 1805, 1806, 1807]],
           "type": "Polygon",
-          "properties": { "district": "Patan", "dt_code": "470", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Patan",
+            "dt_code": "470",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1750, 1820, 1821, 1822, 1823, -1806]],
@@ -27972,7 +27322,13 @@
         {
           "arcs": [[-733, -840, -1909, 1916, -1850, 1917]],
           "type": "Polygon",
-          "properties": { "district": "Dahod", "dt_code": "485", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Dahod",
+            "dt_code": "485",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1691, -1840, 1982, 1983, -1882, 1984]],
@@ -28010,7 +27366,13 @@
         {
           "arcs": [[-1479, -1571, -1752, -1808, 2014, 2015, 2016]],
           "type": "Polygon",
-          "properties": { "district": "Kutch", "dt_code": "468", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Kutch",
+            "dt_code": "468",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-836, -851, 2017, -2015, -1807, -1824, -1885]],
@@ -28026,12 +27388,24 @@
         {
           "arcs": [[-715, 2018, -1886, -1883, -1984, -1986, -1907]],
           "type": "Polygon",
-          "properties": { "district": "Kheda", "dt_code": "483", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Kheda",
+            "dt_code": "483",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-714, 2019, -1887, -2019]],
           "type": "Polygon",
-          "properties": { "district": "Anand", "dt_code": "482", "st_nm": "Gujarat", "st_code": "24", "year": "2011_c" }
+          "properties": {
+            "district": "Anand",
+            "dt_code": "482",
+            "st_nm": "Gujarat",
+            "st_code": "24",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-850, -862, 2021, -2016, -2018]],
@@ -28074,7 +27448,13 @@
         {
           "arcs": [[-229, 237, 238, -234, 239]],
           "type": "Polygon",
-          "properties": { "district": "Jajpur", "dt_code": "382", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Jajpur",
+            "dt_code": "382",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[240, 241, 242, 243, 244]],
@@ -28112,7 +27492,13 @@
         {
           "arcs": [[-242, 260, 261, 262, -250]],
           "type": "Polygon",
-          "properties": { "district": "Boudh", "dt_code": "391", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Boudh",
+            "dt_code": "391",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-235, -239, 274, 275, 276, 277, 278, 279]],
@@ -28183,7 +27569,13 @@
         {
           "arcs": [[-277, -314, 314, 315, -306]],
           "type": "Polygon",
-          "properties": { "district": "Puri", "dt_code": "387", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Puri",
+            "dt_code": "387",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-310, 322, 323, 324, 325, 326, 327]],
@@ -28232,7 +27624,13 @@
         {
           "arcs": [[-236, -280, -298, -261, -241, 676, 677, 678, 679]],
           "type": "Polygon",
-          "properties": { "district": "Angul", "dt_code": "384", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Angul",
+            "dt_code": "384",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-233, 689, -312, -275, -238]],
@@ -28248,7 +27646,13 @@
         {
           "arcs": [[-290, -300, -307, -316, 692, -362, 693]],
           "type": "Polygon",
-          "properties": { "district": "Ganjam", "dt_code": "388", "st_nm": "Odisha", "st_code": "21", "year": "2011_c" }
+          "properties": {
+            "district": "Ganjam",
+            "dt_code": "388",
+            "st_nm": "Odisha",
+            "st_code": "21",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-291, -694, -361, -331]],
@@ -28840,12 +28244,24 @@
         {
           "arcs": [[-415, 457, 458, 459, -424]],
           "type": "Polygon",
-          "properties": { "district": "North Goa", "dt_code": "585", "st_nm": "Goa", "st_code": "30", "year": "2011_c" }
+          "properties": {
+            "district": "North Goa",
+            "dt_code": "585",
+            "st_nm": "Goa",
+            "st_code": "30",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-459, -471, 471]],
           "type": "Polygon",
-          "properties": { "district": "South Goa", "dt_code": "586", "st_nm": "Goa", "st_code": "30", "year": "2011_c" }
+          "properties": {
+            "district": "South Goa",
+            "dt_code": "586",
+            "st_nm": "Goa",
+            "st_code": "30",
+            "year": "2011_c"
+          }
         }
       ]
     },
@@ -28921,7 +28337,13 @@
         {
           "arcs": [[-89, -106, -119, -124, -129, -170, 540, 541, 542]],
           "type": "Polygon",
-          "properties": { "district": "Idukki", "dt_code": "596", "st_nm": "Kerala", "st_code": "32", "year": "2011_c" }
+          "properties": {
+            "district": "Idukki",
+            "dt_code": "596",
+            "st_nm": "Kerala",
+            "st_code": "32",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-90, -543, 543, 544, 545, -538, -92, -540]],
@@ -28970,7 +28392,13 @@
         {
           "arcs": [[-168, -173, 552, 553, -549, -552]],
           "type": "Polygon",
-          "properties": { "district": "Kollam", "dt_code": "600", "st_nm": "Kerala", "st_code": "32", "year": "2011_c" }
+          "properties": {
+            "district": "Kollam",
+            "dt_code": "600",
+            "st_nm": "Kerala",
+            "st_code": "32",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[554, -553, -172, -135]],
@@ -28986,7 +28414,13 @@
         {
           "arcs": [[-518, -522, -529, -533, 699, 700, 701], [702]],
           "type": "Polygon",
-          "properties": { "district": "Kannur", "dt_code": "589", "st_nm": "Kerala", "st_code": "32", "year": "2011_c" }
+          "properties": {
+            "district": "Kannur",
+            "dt_code": "589",
+            "st_nm": "Kerala",
+            "st_code": "32",
+            "year": "2011_c"
+          }
         }
       ]
     },
@@ -30016,7 +29450,13 @@
         {
           "arcs": [[-898, 901, 902, 903, 904, 905]],
           "type": "Polygon",
-          "properties": { "district": "Dhemaji", "dt_code": "308", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Dhemaji",
+            "dt_code": "308",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-897, 910, 911, 912, 913, 914, 915, -902]],
@@ -30054,7 +29494,13 @@
         {
           "arcs": [[-938, 939, 940, 941, 942]],
           "type": "Polygon",
-          "properties": { "district": "Jorhat", "dt_code": "312", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Jorhat",
+            "dt_code": "312",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[948, 949, 950, 951, 952, 953, 954]],
@@ -30092,17 +29538,35 @@
         {
           "arcs": [[970, 971, 972, 973, 974]],
           "type": "Polygon",
-          "properties": { "district": "Chirang", "dt_code": "320", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Chirang",
+            "dt_code": "320",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-968, 975, 976, 977, 978, -975, 979]],
           "type": "Polygon",
-          "properties": { "district": "Baksa", "dt_code": "324", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Baksa",
+            "dt_code": "324",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-950, 980, -960, 981, 982, 983, 984]],
           "type": "Polygon",
-          "properties": { "district": "Nagaon", "dt_code": "305", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Nagaon",
+            "dt_code": "305",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-973, 985, 986, 987, 988, 989]],
@@ -30118,17 +29582,35 @@
         {
           "arcs": [[-952, 990, 991, 992, -976, -967]],
           "type": "Polygon",
-          "properties": { "district": "Darrang", "dt_code": "325", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Darrang",
+            "dt_code": "325",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-971, -979, 996, 997, 998, 999]],
           "type": "Polygon",
-          "properties": { "district": "Barpeta", "dt_code": "303", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Barpeta",
+            "dt_code": "303",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-978, 1000, -997]],
           "type": "Polygon",
-          "properties": { "district": "Nalbari", "dt_code": "323", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Nalbari",
+            "dt_code": "323",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-951, -985, 1001, 1002, 1003, -991]],
@@ -30144,7 +29626,13 @@
         {
           "arcs": [[-977, -993, 1004, 1005, 1006, 1007, 1008, -998, -1001]],
           "type": "Polygon",
-          "properties": { "district": "Kamrup", "dt_code": "321", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Kamrup",
+            "dt_code": "321",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-972, -1000, 1009, 1010, -986]],
@@ -30160,7 +29648,13 @@
         {
           "arcs": [[-987, -1011, 1011, 1012, 1013, 1014]],
           "type": "Polygon",
-          "properties": { "district": "Dhubri", "dt_code": "301", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Dhubri",
+            "dt_code": "301",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-992, -1004, 1015, -1005]],
@@ -30198,7 +29692,13 @@
         {
           "arcs": [[-17, 1067, 1068, 1069, -1054, -1031, -1063, 1070, 1071, -5]],
           "type": "Polygon",
-          "properties": { "district": "Cachar", "dt_code": "316", "st_nm": "Assam", "st_code": "18", "year": "2011_c" }
+          "properties": {
+            "district": "Cachar",
+            "dt_code": "316",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1069, 1077, -28, 1078, 1079]],
@@ -30236,7 +29736,13 @@
         {
           "arcs": [[-915, -939, -943, -956, -928]],
           "type": "Polygon",
-          "properties": { "district": "Majuli", "dt_code": "760", "st_nm": "Assam", "st_code": "18", "year": "2016_c" }
+          "properties": {
+            "district": "Majuli",
+            "dt_code": "760",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2016_c"
+          }
         },
         {
           "arcs": [[-922, -930, -961, -981, -949, 1157]],
@@ -30252,7 +29758,13 @@
         {
           "arcs": [[-983, 1158, -1027, 1159]],
           "type": "Polygon",
-          "properties": { "district": "Hojai", "dt_code": "757", "st_nm": "Assam", "st_code": "18", "year": "2015_c" }
+          "properties": {
+            "district": "Hojai",
+            "dt_code": "757",
+            "st_nm": "Assam",
+            "st_code": "18",
+            "year": "2015_c"
+          }
         },
         {
           "arcs": [[-1013, -1022, -1127, -1151, 1160]],
@@ -30295,7 +29807,13 @@
         {
           "arcs": [[-935, 943, 944, 945, 946, 947]],
           "type": "Polygon",
-          "properties": { "district": "Mon", "dt_code": "261", "st_nm": "Nagaland", "st_code": "13", "year": "2011_c" }
+          "properties": {
+            "district": "Mon",
+            "dt_code": "261",
+            "st_nm": "Nagaland",
+            "st_code": "13",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-936, -948, 961, 962]],
@@ -30377,7 +29895,13 @@
         {
           "arcs": [[-1018, 1119, 1120, -1050, 1121, -1118]],
           "type": "Polygon",
-          "properties": { "district": "Phek", "dt_code": "266", "st_nm": "Nagaland", "st_code": "13", "year": "2011_c" }
+          "properties": {
+            "district": "Phek",
+            "dt_code": "266",
+            "st_nm": "Nagaland",
+            "st_code": "13",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1046, 1128, -1116, -1119, -1122, -1049]],
@@ -30689,7 +30213,13 @@
         {
           "arcs": [[-1061, -1170, -1089, -1097, 1174, -1166]],
           "type": "Polygon",
-          "properties": { "district": "Noney", "dt_code": "771", "st_nm": "Manipur", "st_code": "14", "year": "2016_c" }
+          "properties": {
+            "district": "Noney",
+            "dt_code": "771",
+            "st_nm": "Manipur",
+            "st_code": "14",
+            "year": "2016_c"
+          }
         },
         {
           "arcs": [[-6, -1072, -1167, -1175, -1096, 1175, -9]],
@@ -31369,27 +30899,8 @@
         {
           "arcs": [
             [
-              -1487,
-              -1528,
-              1578,
-              1579,
-              1580,
-              1581,
-              1582,
-              1583,
-              1584,
-              1585,
-              1586,
-              1587,
-              1588,
-              1589,
-              1590,
-              1591,
-              1592,
-              1593,
-              1594,
-              1595,
-              1596
+              -1487, -1528, 1578, 1579, 1580, 1581, 1582, 1583, 1584, 1585, 1586, 1587, 1588, 1589,
+              1590, 1591, 1592, 1593, 1594, 1595, 1596
             ]
           ],
           "type": "Polygon",
@@ -31979,7 +31490,10 @@
           }
         },
         {
-          "arcs": [[[-1515, 1997]], [[-1345, -1505, -1562, 1998, -1560, 1999, -1558, 2000, -1513, -1364]]],
+          "arcs": [
+            [[-1515, 1997]],
+            [[-1345, -1505, -1562, 1998, -1560, 1999, -1558, 2000, -1513, -1364]]
+          ],
           "type": "MultiPolygon",
           "properties": {
             "district": "Ajmer",
@@ -32244,7 +31758,13 @@
         {
           "arcs": [[-1285, 1315, 1316, 1317, 1318, -1295]],
           "type": "Polygon",
-          "properties": { "district": "Nuh", "dt_code": "087", "st_nm": "Haryana", "st_code": "06", "year": "2011_c" }
+          "properties": {
+            "district": "Nuh",
+            "dt_code": "087",
+            "st_nm": "Haryana",
+            "st_code": "06",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1265, 1323, 1324, -1316, -1284, -1287]],
@@ -32304,7 +31824,13 @@
         {
           "arcs": [[-2212, -2227, -2246, 2259, 2260]],
           "type": "Polygon",
-          "properties": { "district": "Sirsa", "dt_code": "079", "st_nm": "Haryana", "st_code": "06", "year": "2011_c" }
+          "properties": {
+            "district": "Sirsa",
+            "dt_code": "079",
+            "st_nm": "Haryana",
+            "st_code": "06",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2235, -2241, 2265, 2266, 2267, -2258, -2248]],
@@ -32320,7 +31846,13 @@
         {
           "arcs": [[-2220, -2233, -2259, -2268, 2270, 2271, 2272, 2273, 2274]],
           "type": "Polygon",
-          "properties": { "district": "Jind", "dt_code": "077", "st_nm": "Haryana", "st_code": "06", "year": "2011_c" }
+          "properties": {
+            "district": "Jind",
+            "dt_code": "077",
+            "st_nm": "Haryana",
+            "st_code": "06",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2221, -2275, 2275, -2263, -2260, -2245]],
@@ -32336,7 +31868,13 @@
         {
           "arcs": [[-2264, -2276, -2274, 2284, 2285]],
           "type": "Polygon",
-          "properties": { "district": "Hisar", "dt_code": "080", "st_nm": "Haryana", "st_code": "06", "year": "2011_c" }
+          "properties": {
+            "district": "Hisar",
+            "dt_code": "080",
+            "st_nm": "Haryana",
+            "st_code": "06",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2267, 2288, 2289, 2290, -2271]],
@@ -32494,7 +32032,13 @@
         {
           "arcs": [[-1456, -1502, 1505]],
           "type": "Polygon",
-          "properties": { "district": "Sheohar", "dt_code": "205", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Sheohar",
+            "dt_code": "205",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1389, -1460, 1519, 1520, 1521, -1494, -1427]],
@@ -32521,7 +32065,13 @@
         {
           "arcs": [[1573, 1574, 1575, 1576, 1577]],
           "type": "Polygon",
-          "properties": { "district": "Katihar", "dt_code": "212", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Katihar",
+            "dt_code": "212",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1563, 1627, 1628, 1629, 1630, 1631, 1632]],
@@ -32537,12 +32087,24 @@
         {
           "arcs": [[-1545, 1633, 1634, 1635, 1636, 1637]],
           "type": "Polygon",
-          "properties": { "district": "Bhojpur", "dt_code": "231", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Bhojpur",
+            "dt_code": "231",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1546, -1638, 1643, 1644, -1621]],
           "type": "Polygon",
-          "properties": { "district": "Buxar", "dt_code": "232", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Buxar",
+            "dt_code": "232",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1500, 1658, 1659, -1628, -1568, 1660]],
@@ -32558,42 +32120,90 @@
         {
           "arcs": [[-1629, -1660, 1661, 1662, 1663]],
           "type": "Polygon",
-          "properties": { "district": "Saharsa", "dt_code": "214", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Saharsa",
+            "dt_code": "214",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1622, -1645, 1679, 1680, -1670]],
           "type": "Polygon",
-          "properties": { "district": "Kaimur", "dt_code": "233", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Kaimur",
+            "dt_code": "233",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1637, 1681, 1682, 1683, 1684, 1685, -1680, -1644]],
           "type": "Polygon",
-          "properties": { "district": "Rohtas", "dt_code": "234", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Rohtas",
+            "dt_code": "234",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[1705, 1706, 1707, 1708, 1709, 1710, 1711]],
           "type": "Polygon",
-          "properties": { "district": "Jamui", "dt_code": "238", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Jamui",
+            "dt_code": "238",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1695, 1716, 1717, -1706, 1718, 1719]],
           "type": "Polygon",
-          "properties": { "district": "Banka", "dt_code": "225", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Banka",
+            "dt_code": "225",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1709, 1733, 1734, 1735, 1736, 1737]],
           "type": "Polygon",
-          "properties": { "district": "Nawada", "dt_code": "237", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Nawada",
+            "dt_code": "237",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1736, 1738, 1739, 1740, 1741, 1742, 1743, 1744, 1745]],
           "type": "Polygon",
-          "properties": { "district": "Gaya", "dt_code": "236", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Gaya",
+            "dt_code": "236",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1632, 1769, -1719, -1712, 1770, 1771]],
           "type": "Polygon",
-          "properties": { "district": "Munger", "dt_code": "226", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Munger",
+            "dt_code": "226",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1566, 1943, 1944, 1945]],
@@ -32653,7 +32263,13 @@
         {
           "arcs": [[-1636, 1954, 1955, -1744, 1956, -1682]],
           "type": "Polygon",
-          "properties": { "district": "Arwal", "dt_code": "240", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Arwal",
+            "dt_code": "240",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1745, -1956, 1957, 1958]],
@@ -32669,22 +32285,46 @@
         {
           "arcs": [[-1737, -1746, -1959, 1959, -1952, -1954]],
           "type": "Polygon",
-          "properties": { "district": "Nalanda", "dt_code": "229", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Nalanda",
+            "dt_code": "229",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1565, -1948, -1953, -1960, -1958, -1955, -1635, 1960, -1944]],
           "type": "Polygon",
-          "properties": { "district": "Patna", "dt_code": "230", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Patna",
+            "dt_code": "230",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1521, 1961, -1945, -1961, -1634, -1544, 1962]],
           "type": "Polygon",
-          "properties": { "district": "Saran", "dt_code": "219", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Saran",
+            "dt_code": "219",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1495, -1522, -1963, -1543]],
           "type": "Polygon",
-          "properties": { "district": "Siwan", "dt_code": "218", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Siwan",
+            "dt_code": "218",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1457, -1506, -1501, -1661, -1567, -1946, -1962, -1520, -1459, -1507]],
@@ -32711,12 +32351,24 @@
         {
           "arcs": [[-1965, 1966, 1967, 1968, 1969]],
           "type": "Polygon",
-          "properties": { "district": "Araria", "dt_code": "209", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Araria",
+            "dt_code": "209",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1663, 1970, 1971, -1967, -1964]],
           "type": "Polygon",
-          "properties": { "district": "Supaul", "dt_code": "208", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Supaul",
+            "dt_code": "208",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1499, 1972, -1971, -1662, -1659]],
@@ -32732,7 +32384,13 @@
         {
           "arcs": [[-1577, -1950, -1966, -1970, 1973, 1974, 1975, 1976, 1977, 1978]],
           "type": "Polygon",
-          "properties": { "district": "Purnia", "dt_code": "211", "st_nm": "Bihar", "st_code": "10", "year": "2011_c" }
+          "properties": {
+            "district": "Purnia",
+            "dt_code": "211",
+            "st_nm": "Bihar",
+            "st_code": "10",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-1422, -2006, -1974, -1969, 2020]],
@@ -33033,12 +32691,24 @@
         {
           "arcs": [[2022, 2023, 2024, 2025, 2026, 2027, 2028]],
           "type": "Polygon",
-          "properties": { "district": "Leh", "dt_code": "003", "st_nm": "Ladakh", "st_code": "38", "year": "2011_c" }
+          "properties": {
+            "district": "Leh",
+            "dt_code": "003",
+            "st_nm": "Ladakh",
+            "st_code": "38",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2024, 2029, 2030, 2031, 2032]],
           "type": "Polygon",
-          "properties": { "district": "Kargil", "dt_code": "004", "st_nm": "Ladakh", "st_code": "38", "year": "2011_c" }
+          "properties": {
+            "district": "Kargil",
+            "dt_code": "004",
+            "st_nm": "Ladakh",
+            "st_code": "38",
+            "year": "2011_c"
+          }
         }
       ]
     },
@@ -33520,7 +33190,13 @@
         {
           "arcs": [[-2143, 2170, 2171, 2172, 2173, 2174]],
           "type": "Polygon",
-          "properties": { "district": "Moga", "dt_code": "042", "st_nm": "Punjab", "st_code": "03", "year": "2011_c" }
+          "properties": {
+            "district": "Moga",
+            "dt_code": "042",
+            "st_nm": "Punjab",
+            "st_code": "03",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2142, -2164, -2153, 2175, 2176, 2177, -2171]],
@@ -33624,7 +33300,13 @@
         {
           "arcs": [[-2222, 2244, 2245, -2226, -2224]],
           "type": "Polygon",
-          "properties": { "district": "Mansa", "dt_code": "047", "st_nm": "Punjab", "st_code": "03", "year": "2011_c" }
+          "properties": {
+            "district": "Mansa",
+            "dt_code": "047",
+            "st_nm": "Punjab",
+            "st_code": "03",
+            "year": "2011_c"
+          }
         },
         {
           "arcs": [[-2144, -2175, -2204, -2210, -2169, 2303, -2147, 2304]],

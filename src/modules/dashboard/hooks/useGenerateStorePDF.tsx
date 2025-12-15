@@ -8,29 +8,22 @@ const useGenerateStorePDF = (stores: Store[]) => {
       .filter(
         (s) =>
           s.yearly_revenue.at(-1)?.revenue_inr !== undefined &&
-          s.yearly_revenue.at(-1)?.revenue_inr !== null
+          s.yearly_revenue.at(-1)?.revenue_inr !== null,
       )
       .sort(
         (a, b) =>
-          (b.yearly_revenue.at(-1)?.revenue_inr ?? 0) -
-          (a.yearly_revenue.at(-1)?.revenue_inr ?? 0)
+          (b.yearly_revenue.at(-1)?.revenue_inr ?? 0) - (a.yearly_revenue.at(-1)?.revenue_inr ?? 0),
       )
       .slice(0, 20);
 
-    const headers = [
-      "Name",
-      "City",
-      "State",
-      "Revenue",
-      "RFM Score",
-      "RFM Segment",
-    ];
+    const headers = ["Name", "City", "State", "Revenue", "RFM Score", "RFM Segment"];
 
     const rows = topStores.map((s) => [
       s.name,
       s.city,
       s.state,
-      s.yearly_revenue.at(-1)?.revenue_inr?.toLocaleString("en-IN", { maximumFractionDigits: 0 }) ?? "0",
+      s.yearly_revenue.at(-1)?.revenue_inr?.toLocaleString("en-IN", { maximumFractionDigits: 0 }) ??
+        "0",
       s.rfm_score.toFixed(2),
       s.rfm_segment,
     ]);

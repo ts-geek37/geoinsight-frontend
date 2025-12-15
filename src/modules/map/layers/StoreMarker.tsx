@@ -1,7 +1,5 @@
 import { Store } from "@/types";
-import {
-  getFormattedLatestRevenue
-} from "@/utils/formatRevenue";
+import { getFormattedLatestRevenue } from "@/utils/formatRevenue";
 import getMarkerColor from "@/utils/rfm";
 import L from "leaflet";
 import { memo, useMemo } from "react";
@@ -15,9 +13,7 @@ interface Props {
 
 const StoreMarker: React.FC<Props> = ({ store, isActive, onClick }) => {
   const color = getMarkerColor(store.rfm_segment);
-  const formattedRevenue = getFormattedLatestRevenue(
-    store.yearly_revenue
-  )?.latestRevenue;
+  const formattedRevenue = getFormattedLatestRevenue(store.yearly_revenue)?.latestRevenue;
 
   const icon = useMemo(() => {
     const size = isActive ? 18 : 14;
@@ -73,9 +69,7 @@ const StoreMarker: React.FC<Props> = ({ store, isActive, onClick }) => {
             </div>
 
             <div className="flex items-center justify-between text-[11px]">
-              <span className="uppercase tracking-wide text-gray-500">
-                Revenue
-              </span>
+              <span className="uppercase tracking-wide text-gray-500">Revenue</span>
               <span className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">
                 {formattedRevenue}
               </span>

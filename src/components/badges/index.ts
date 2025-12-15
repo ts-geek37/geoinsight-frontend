@@ -1,1 +1,1 @@
-export { default as SegmentBadge } from './SegmentBadge'
+export { default as SegmentBadge } from "./SegmentBadge";

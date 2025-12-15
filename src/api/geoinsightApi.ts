@@ -7,7 +7,7 @@ export const geoinsightApi = createApi({
     baseUrl: process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000",
   }),
 
-  tagTypes: ["Store", "Similarity"],
+  tagTypes: ["Store", "Similarity", "Summary"],
 
   endpoints: () => ({}),
 });

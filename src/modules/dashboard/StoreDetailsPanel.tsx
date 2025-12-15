@@ -60,15 +60,9 @@ const StoreDetailsPanel: React.FC<StoreDetailsPanelProps> = ({
           </div>
 
           <div className="flex items-center gap-2">
-            <SegmentBadge
-              segment={store.rfm_segment ?? SEGMENT_ENUM.CHAMPION}
-            />
+            <SegmentBadge segment={store.rfm_segment ?? SEGMENT_ENUM.CHAMPION} />
 
-            <Button
-              onClick={onClose}
-              variant="outline"
-              className="px-3 py-1 text-sm rounded-lg"
-            >
+            <Button onClick={onClose} variant="outline" className="px-3 py-1 text-sm rounded-lg">
               Close
             </Button>
           </div>
@@ -96,10 +90,7 @@ const StoreDetailsPanel: React.FC<StoreDetailsPanelProps> = ({
               }))}
               margin={{ top: 8, right: 16, bottom: 8, left: 0 }}
             >
-              <CartesianGrid
-                strokeDasharray="3 3"
-                stroke="hsl(var(--border))"
-              />
+              <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
 
               <XAxis
                 dataKey="label"
@@ -129,19 +120,14 @@ const StoreDetailsPanel: React.FC<StoreDetailsPanelProps> = ({
                   const { month, year } = entry?.[0]?.payload;
                   return `${months[month]} ${year}`;
                 }}
-                formatter={(v: number) => [
-                  `₹${(v / 100000).toFixed(1)}L`,
-                  "Revenue",
-                ]}
+                formatter={(v: number) => [`₹${(v / 100000).toFixed(1)}L`, "Revenue"]}
               />
 
               <Line
                 type="monotone"
                 dataKey="revenue"
                 stroke={
-                  kpis[0]?.trend.isPositive
-                    ? "var(--segment-champion)"
-                    : "var(--segment-attention)"
+                  kpis[0]?.trend.isPositive ? "var(--segment-champion)" : "var(--segment-attention)"
                 }
                 strokeWidth={2}
                 dot={false}
@@ -160,10 +146,7 @@ const StoreDetailsPanel: React.FC<StoreDetailsPanelProps> = ({
               }))}
               margin={{ top: 8, right: 12, bottom: 8, left: 2 }}
             >
-              <CartesianGrid
-                strokeDasharray="3 3"
-                stroke="hsl(var(--border))"
-              />
+              <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
 
               <XAxis
                 dataKey="label"
@@ -174,12 +157,7 @@ const StoreDetailsPanel: React.FC<StoreDetailsPanelProps> = ({
                 padding={{ left: 11, right: 11 }}
               />
 
-              <YAxis
-                tick={{ fontSize: 11 }}
-                tickLine={false}
-                axisLine={false}
-                width={30}
-              />
+              <YAxis tick={{ fontSize: 11 }} tickLine={false} axisLine={false} width={30} />
 
               <Tooltip
                 contentStyle={{
@@ -211,12 +189,8 @@ const StoreDetailsPanel: React.FC<StoreDetailsPanelProps> = ({
                 key={item.label}
                 className="flex flex-col gap-1 rounded-lg border border-border/40 bg-card p-3"
               >
-                <span className="text-xs text-muted-foreground">
-                  {item.label}
-                </span>
-                <span className="text-base font-semibold text-foreground">
-                  {item.value}
-                </span>
+                <span className="text-xs text-muted-foreground">{item.label}</span>
+                <span className="text-base font-semibold text-foreground">{item.value}</span>
               </div>
             ))}
           </div>
@@ -231,9 +205,7 @@ const StoreDetailsPanel: React.FC<StoreDetailsPanelProps> = ({
               >
                 <item.icon className="w-5 h-5 text-muted-foreground" />
 
-                <p className="text-xl font-semibold text-foreground leading-none">
-                  {item.value}
-                </p>
+                <p className="text-xl font-semibold text-foreground leading-none">{item.value}</p>
 
                 <p className="text-xs text-muted-foreground text-center leading-tight">
                   {item.label}
@@ -266,10 +238,6 @@ const CardSection: React.FC<{
 }> = ({ title, hasHeight = true, children }) => (
   <div className="flex flex-col gap-4 bg-secondary/30 rounded-xl p-3 border border-border/50">
     <h3 className="font-semibold text-foreground">{title}</h3>
-    {hasHeight ? (
-      <div className="h-[180px]">{children}</div>
-    ) : (
-      <div>{children}</div>
-    )}
+    {hasHeight ? <div className="h-[180px]">{children}</div> : <div>{children}</div>}
   </div>
 );

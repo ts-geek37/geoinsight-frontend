@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  createContext,
-  ReactNode,
-  useContext,
-  useEffect,
-  useReducer,
-  useState,
-} from "react";
+import { createContext, ReactNode, useContext, useEffect, useReducer, useState } from "react";
 
 export enum PanelView {
   CLOSED = "CLOSED",
@@ -71,9 +64,7 @@ export const PanelProvider = ({ children }: { children: ReactNode }) => {
     close: () => dispatch({ type: "CLOSE" }),
   };
 
-  return (
-    <PanelContext.Provider value={value}>{children}</PanelContext.Provider>
-  );
+  return <PanelContext.Provider value={value}>{children}</PanelContext.Provider>;
 };
 
 export const usePanel = () => {
@@ -87,40 +78,36 @@ interface PanelContainerProps {
   isOpen: boolean;
 }
 
-export const PanelContainer: React.FC<PanelContainerProps> = ({
-  children,
-  isOpen,
-}) => {
+export const PanelContainer: React.FC<PanelContainerProps> = ({ children, isOpen }) => {
   const [shouldRender, setShouldRender] = useState(isOpen);
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    if (isOpen) {
-      setShouldRender(true);
-      requestAnimationFrame(() => {
-        setIsAnimating(true);
-      });
-    } else {
+    if (!isOpen) {
       setIsAnimating(false);
-      const timer = setTimeout(() => {
-        setShouldRender(false);
-      }, 300);
-      return () => clearTimeout(timer);
+      return;
     }
-  }, [isOpen]);
 
+    setShouldRender(true);
+
+    const id = requestAnimationFrame(() => {
+      setIsAnimating(true);
+    });
+
+    return () => cancelAnimationFrame(id);
+  }, [isOpen]);
   if (!shouldRender) return null;
 
   return (
     <aside
       className={`flex-shrink-0 overflow-hidden transition-all duration-300 ease-in-out ${
-        isAnimating ? "w-[28vw] 2xl:w-[28vw] opacity-100" : "w-0 opacity-0"
+        isAnimating ? "w-full md:w-[28vw] opacity-100" : "w-0 opacity-0"
       }`}
       style={{
         transitionProperty: "width, opacity",
       }}
     >
-      <div className="w-[28vw] 2xl:w-[28vw] h-full">{children}</div>
+      <div className="w-full md:w-[28vw] h-full">{children}</div>
     </aside>
   );
 };

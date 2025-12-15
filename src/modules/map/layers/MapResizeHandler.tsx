@@ -8,10 +8,12 @@ const MapResizeHandler = () => {
   const map = useMap();
   const { open } = useSidebar();
   const { view } = usePanel();
+  const isOpen = view !== PanelView.CLOSED;
+
   useEffect(() => {
     let frame: number;
     let start: number | null = null;
-    const duration = 500;
+    const duration = 300;
 
     const animate = (timestamp: number) => {
       if (!start) start = timestamp;
@@ -27,7 +29,7 @@ const MapResizeHandler = () => {
     frame = requestAnimationFrame(animate);
 
     return () => cancelAnimationFrame(frame);
-  }, [open, map, view === PanelView.CLOSED]);
+  }, [open, map, isOpen]);
 
   return null;
 };

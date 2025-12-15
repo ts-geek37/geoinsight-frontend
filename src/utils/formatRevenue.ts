@@ -19,17 +19,15 @@ const formatIndianNumber = (value: number): string => {
 
 const getFormattedLatestRevenue = (
   yearly_revenue?: { year: number; revenue_inr: number }[],
-  fetchYear?: number
+  fetchYear?: number,
 ): RevenueRange | null => {
   if (!yearly_revenue?.length) return null;
 
   const latestYear = yearly_revenue.reduce(
     (max, r) => Math.max(max, r.year),
-    yearly_revenue[0].year
+    yearly_revenue[0].year,
   );
-  const targetYear = yearly_revenue.some((r) => r.year === fetchYear)
-    ? fetchYear!
-    : latestYear;
+  const targetYear = yearly_revenue.some((r) => r.year === fetchYear) ? fetchYear! : latestYear;
 
   const yearRecords = yearly_revenue.filter((r) => r.year === targetYear);
 
@@ -45,4 +43,3 @@ const getFormattedLatestRevenue = (
 };
 
 export { formatIndianNumber, getFormattedLatestRevenue };
-

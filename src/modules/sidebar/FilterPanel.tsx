@@ -23,11 +23,7 @@ const FilterPanel = () => {
     storeMap: { filters, dispatch, stateOptions, cityOptions },
   } = useGlobal();
 
-  const segments = [
-    SEGMENT_ENUM.CHAMPION,
-    SEGMENT_ENUM.PROMISING,
-    SEGMENT_ENUM.NEEDS_ATTENTION,
-  ];
+  const segments = [SEGMENT_ENUM.CHAMPION, SEGMENT_ENUM.PROMISING, SEGMENT_ENUM.NEEDS_ATTENTION];
 
   const latestRevenues = stores.map((s) => {
     const yearly = s.yearly_revenue;
@@ -48,7 +44,7 @@ const FilterPanel = () => {
     const updated = active.includes(segment)
       ? active.filter((s) => s !== segment)
       : [...active, segment];
-    console.log("a", updated);
+
     dispatch({ type: "SET_SEGMENT", payload: updated });
   };
 
@@ -56,8 +52,8 @@ const FilterPanel = () => {
     v >= 10000000
       ? (v / 10000000).toFixed(2) + " Cr"
       : v >= 100000
-      ? (v / 100000).toFixed(2) + " L"
-      : v.toFixed(0);
+        ? (v / 100000).toFixed(2) + " L"
+        : v.toFixed(0);
 
   const selectedSegments = filters.segment || [];
 
@@ -117,9 +113,8 @@ const FilterPanel = () => {
                   segment={segment}
                   showLabel
                   className={cn(
-                    !active &&
-                      "border border-border/40 bg-background-background text-foreground",
-                    "px-4 py-2"
+                    !active && "border border-border/40 bg-background-background text-foreground",
+                    "px-4 py-2",
                   )}
                 />
               </button>
@@ -146,10 +141,7 @@ const FilterPanel = () => {
 
         <div className="flex justify-between">
           {[revenueRange[0], revenueRange[1]].map((v, i) => (
-            <span
-              key={i}
-              className="text-xs bg-background-background px-2 py-0.5 rounded"
-            >
+            <span key={i} className="text-xs bg-background-background px-2 py-0.5 rounded">
               ₹{formatValue(v)}
             </span>
           ))}

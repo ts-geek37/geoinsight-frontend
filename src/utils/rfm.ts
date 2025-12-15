@@ -8,7 +8,6 @@ export const RFM_COLORS = {
 } as const;
 
 const getMarkerColor = (rfm_segment: SEGMENT_ENUM): string => {
-  
   switch (rfm_segment) {
     case SEGMENT_ENUM.CHAMPION:
       return RFM_COLORS.Champion;

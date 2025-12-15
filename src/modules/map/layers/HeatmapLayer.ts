@@ -16,8 +16,8 @@ interface Props {
 
 const HeatmapLayer: React.FC<Props> = ({
   points,
-  radius = 20,
-  maxZoom = 18,
+  radius = 35,
+  maxZoom = 14,
   blur = 15,
   maxIntensity,
 }) => {
@@ -35,8 +35,7 @@ const HeatmapLayer: React.FC<Props> = ({
       }).addTo(map);
     } else {
       layerRef.current.setLatLngs(points);
-      if (maxIntensity !== undefined)
-        layerRef.current.setOptions({ max: maxIntensity });
+      if (maxIntensity !== undefined) layerRef.current.setOptions({ max: maxIntensity });
     }
   }, [map, points, radius, maxZoom, blur, maxIntensity]);
 

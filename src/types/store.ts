@@ -1,9 +1,7 @@
 import { SEGMENT_ENUM } from "@/components/badges/SegmentBadge";
 import { AreaProfile } from "./areaProfile";
- 
-export type RevenueFilter =
-  | "all"
-  | { start: number; end: number };
+
+export type RevenueFilter = "all" | { start: number; end: number };
 
 export type Store = {
   id: string;
@@ -34,7 +32,7 @@ export type Store = {
     avg_ticket_size: number;
     transaction_count: number;
   }[];
-}
+};
 
 export interface Sales {
   id?: number;
@@ -48,6 +46,6 @@ export interface Sales {
 
 export interface StoreSales {
   store_id: string;
-  store: Store & { area: AreaProfile};
+  store: Store & { area: AreaProfile };
   sales: Sales[];
 }

@@ -12,12 +12,9 @@ export const storeApi = geoinsightApi.injectEndpoints({
     getStore: builder.query<StoreSales, string>({
       query: (storeId) => `/stores/${storeId}`,
       transformResponse: (response: ApiResponse<StoreSales>) => response.data,
-      providesTags: (_result, _err, storeId) => [
-        { type: "Store", id: storeId },
-      ],
+      providesTags: (_result, _err, storeId) => [{ type: "Store", id: storeId }],
     }),
   }),
 });
 
-export const { useGetStoresQuery, useGetStoreQuery, useLazyGetStoreQuery } =
-  storeApi;
+export const { useGetStoresQuery, useGetStoreQuery, useLazyGetStoreQuery } = storeApi;

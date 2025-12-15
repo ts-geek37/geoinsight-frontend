@@ -22,7 +22,7 @@ const StoreMarkersComponent: React.FC<Props> = ({ stores }) => {
         openStore(storeId);
       }
     },
-    [activeStoreId, openStore, close]
+    [activeStoreId, openStore, close],
   );
 
   return (

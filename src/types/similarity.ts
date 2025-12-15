@@ -12,3 +12,24 @@ export interface SimilarStoreResult {
   baseArea: AreaProfile;
   similarAreas: SimilarAreaResult[];
 }
+
+export type StoreSummary = {
+  id: string;
+  name: string;
+  city: string;
+  state: string;
+  rfm_score: number;
+  revenue_latest_year: number;
+  rank_score: number;
+};
+
+export type StoreAreaSummaryItem = {
+  store: StoreSummary;
+  baseArea: AreaProfile;
+  areas: SimilarAreaResult[];
+};
+
+export type StoreAreaSummaryResponse = {
+  generated_at: string;
+  results: StoreAreaSummaryItem[];
+};

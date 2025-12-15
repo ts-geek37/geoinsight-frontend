@@ -1,16 +1,12 @@
 "use client";
 
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useMemo,
-  useReducer,
-} from "react";
+import { createContext, useCallback, useContext, useMemo, useReducer } from "react";
 
 import { useGetStoresQuery } from "@/api";
 import { SEGMENT_ENUM } from "@/components/badges/SegmentBadge";
 import { Store } from "@/types";
+
+export type MapStyle = "light" | "dark" | "standard" | "satellite";
 
 interface RevenueRange {
   min: number | null;
@@ -43,6 +39,9 @@ interface StoreMapState {
   markersEnabled: boolean;
   setMarkersEnabled: (v: boolean) => void;
 
+  mapStyle: MapStyle;
+  setMapStyle: (v: MapStyle) => void;
+
   stateOptions: string[];
   cityOptions: string[];
   filteredStores: Store[];
@@ -65,11 +64,7 @@ const initialFilters: FilterState = {
   search: "",
   state: "all",
   city: "all",
-  segment: [
-    SEGMENT_ENUM.CHAMPION,
-    SEGMENT_ENUM.PROMISING,
-    SEGMENT_ENUM.NEEDS_ATTENTION,
-  ],
+  segment: [SEGMENT_ENUM.CHAMPION, SEGMENT_ENUM.PROMISING, SEGMENT_ENUM.NEEDS_ATTENTION],
   revenueRange: { min: null, max: null },
 };
 
@@ -77,22 +72,16 @@ function filterReducer(state: FilterState, action: FilterAction): FilterState {
   switch (action.type) {
     case "SET_SEARCH":
       return { ...state, search: action.payload };
-
     case "SET_STATE":
       return { ...state, state: action.payload, city: "all" };
-
     case "SET_CITY":
       return { ...state, city: action.payload };
-
     case "SET_SEGMENT":
       return { ...state, segment: action.payload };
-
     case "SET_REVENUE_RANGE":
       return { ...state, revenueRange: action.payload };
-
     case "CLEAR_ALL":
       return initialFilters;
-
     default:
       return state;
   }
@@ -104,21 +93,14 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
   const { data: stores = [], isLoading, isError } = useGetStoresQuery();
 
   const [filters, dispatch] = useReducer(filterReducer, initialFilters);
-  console.log("fil", filters);
-  const [heatmapEnabled, setHeatmapEnabled] = useReducer(
-    (_: boolean, next: boolean) => next,
-    true
-  );
 
-  const [markersEnabled, setMarkersEnabled] = useReducer(
-    (_: boolean, next: boolean) => next,
-    true
-  );
+  const [heatmapEnabled, setHeatmapEnabled] = useReducer((_: boolean, next: boolean) => next, true);
 
-  const stateOptions = useMemo(
-    () => [...new Set(stores.map((s) => s.state))].sort(),
-    [stores]
-  );
+  const [markersEnabled, setMarkersEnabled] = useReducer((_: boolean, next: boolean) => next, true);
+
+  const [mapStyle, setMapStyle] = useReducer((_: MapStyle, next: MapStyle) => next, "standard");
+
+  const stateOptions = useMemo(() => [...new Set(stores.map((s) => s.state))].sort(), [stores]);
 
   const cityOptions = useMemo(() => {
     const cities = stores
@@ -139,31 +121,18 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
         if (!match) return false;
       }
 
-      if (filters.state !== "all" && store.state !== filters.state)
-        return false;
+      if (filters.state !== "all" && store.state !== filters.state) return false;
       if (filters.city !== "all" && store.city !== filters.city) return false;
-
       if (!filters.segment.includes(store.rfm_segment)) return false;
 
-      if (
-        filters.revenueRange.min !== null ||
-        filters.revenueRange.max !== null
-      ) {
+      if (filters.revenueRange.min !== null || filters.revenueRange.max !== null) {
         const yearly = store.yearly_revenue;
         if (yearly?.length) {
           const latest = yearly.reduce((a, b) => (a.year > b.year ? a : b));
           const revenue = Number(latest.revenue_inr);
 
-          if (
-            filters.revenueRange.min !== null &&
-            revenue < filters.revenueRange.min
-          )
-            return false;
-          if (
-            filters.revenueRange.max !== null &&
-            revenue > filters.revenueRange.max
-          )
-            return false;
+          if (filters.revenueRange.min !== null && revenue < filters.revenueRange.min) return false;
+          if (filters.revenueRange.max !== null && revenue > filters.revenueRange.max) return false;
         }
       }
 
@@ -173,26 +142,18 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
 
   const heatmapPoints = useMemo(
     () =>
-      filteredStores.map(
-        (s) =>
-          [s.latitude, s.longitude, s.rfm_score] as [number, number, number]
-      ),
-    [filteredStores]
+      filteredStores.map((s) => [s.latitude, s.longitude, s.rfm_score] as [number, number, number]),
+    [filteredStores],
   );
 
   const segmentCounts = useMemo(
     () => ({
-      champion: filteredStores.filter(
-        (s) => s.rfm_segment === SEGMENT_ENUM.CHAMPION
-      ).length,
-      promising: filteredStores.filter(
-        (s) => s.rfm_segment === SEGMENT_ENUM.PROMISING
-      ).length,
-      attention: filteredStores.filter(
-        (s) => s.rfm_segment === SEGMENT_ENUM.NEEDS_ATTENTION
-      ).length,
+      champion: filteredStores.filter((s) => s.rfm_segment === SEGMENT_ENUM.CHAMPION).length,
+      promising: filteredStores.filter((s) => s.rfm_segment === SEGMENT_ENUM.PROMISING).length,
+      attention: filteredStores.filter((s) => s.rfm_segment === SEGMENT_ENUM.NEEDS_ATTENTION)
+        .length,
     }),
-    [filteredStores]
+    [filteredStores],
   );
 
   const clearFilters = useCallback(() => {
@@ -205,26 +166,29 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
       dispatch,
       heatmapEnabled,
       setHeatmapEnabled,
+      markersEnabled,
+      setMarkersEnabled,
+      mapStyle,
+      setMapStyle,
       stateOptions,
       cityOptions,
       filteredStores,
       heatmapPoints,
       segmentCounts,
       clearFilters,
-      markersEnabled,
-      setMarkersEnabled,
     }),
     [
       filters,
       heatmapEnabled,
+      markersEnabled,
+      mapStyle,
       stateOptions,
       cityOptions,
       filteredStores,
       heatmapPoints,
       segmentCounts,
       clearFilters,
-      markersEnabled,
-    ]
+    ],
   );
 
   const value = useMemo<GlobalContextValue>(
@@ -232,12 +196,10 @@ export const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
       storesData: { stores, isLoading, isError },
       storeMap,
     }),
-    [stores, isLoading, isError, storeMap]
+    [stores, isLoading, isError, storeMap],
   );
 
-  return (
-    <GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>
-  );
+  return <GlobalContext.Provider value={value}>{children}</GlobalContext.Provider>;
 };
 
 export const useGlobal = () => {

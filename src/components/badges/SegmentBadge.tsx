@@ -69,12 +69,10 @@ const SegmentBadge: React.FC<SegmentBadgeProps> = ({
         config.bg,
         config.text,
         config.border,
-        className
+        className,
       )}
     >
-      {showDot && (
-        <span className={cn("w-1.5 h-1.5 rounded-full", config.dot)} />
-      )}
+      {showDot && <span className={cn("w-1.5 h-1.5 rounded-full", config.dot)} />}
       {showLabel && config.label}
     </span>
   );

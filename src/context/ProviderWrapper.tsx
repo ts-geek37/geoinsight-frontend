@@ -7,6 +7,7 @@ import { AreaMarkerProvider } from "./AreaMarkerContext";
 import { GlobalProvider } from "./GlobalContext";
 import { PanelProvider } from "./PanelContext";
 import { SidebarProvider } from "./SidebarContext";
+import ThemeProvider from "./ThemeContext";
 
 interface Props {
   children: React.ReactNode;
@@ -18,7 +19,9 @@ const ProviderWrapper: React.FC<Props> = ({ children }) => {
       <GlobalProvider>
         <PanelProvider>
           <AreaMarkerProvider>
-            <SidebarProvider>{children}</SidebarProvider>
+            <SidebarProvider>
+              <ThemeProvider>{children}</ThemeProvider>
+            </SidebarProvider>
           </AreaMarkerProvider>
         </PanelProvider>
       </GlobalProvider>

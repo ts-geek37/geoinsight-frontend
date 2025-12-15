@@ -8,7 +8,7 @@ interface Props {
 
 const RootLayout: React.FC<Props> = ({ children }) => {
   return (
-    <html lang="en" suppressHydrationWarning className="toc-sidebar">
+    <html lang="en" suppressHydrationWarning className="toc-sidebar light">
       <body>
         <ProviderWrapper>
           <AppLayout>{children}</AppLayout>

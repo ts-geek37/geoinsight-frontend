@@ -49,18 +49,12 @@ const AreaMarker: React.FC<Props> = ({ area }) => {
 
           <div className="space-y-1.5">
             <div className="flex items-center justify-between text-[11px]">
-              <span className="uppercase tracking-wide text-gray-500">
-                Similarity
-              </span>
-              <span className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">
-                {similarity}%
-              </span>
+              <span className="uppercase tracking-wide text-gray-500">Similarity</span>
+              <span className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">{similarity}%</span>
             </div>
 
             <div className="flex items-center justify-between text-[11px]">
-              <span className="uppercase tracking-wide text-gray-500">
-                Population (3km)
-              </span>
+              <span className="uppercase tracking-wide text-gray-500">Population (3km)</span>
               <span className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">
                 {area.population_3km?.toLocaleString() ?? "NA"}
               </span>

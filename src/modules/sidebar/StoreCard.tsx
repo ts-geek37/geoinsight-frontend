@@ -17,22 +17,16 @@ const StoreCard: React.FC<StoreCardProps> = ({ store, onClick }) => {
     <div
       onClick={() => onClick?.(store)}
       className={cn(
-        "flex flex-col gap-2 p-3 rounded-lg border border-border/30 bg-secondary/30 cursor-pointer transition-all hover:border-border hover:bg-accent/30 hover:shadow-sm"
+        "flex flex-col gap-2 p-3 rounded-lg border border-border/30 bg-secondary/30 cursor-pointer transition-all hover:border-border hover:bg-accent/30 hover:shadow-sm",
       )}
     >
       <div className="flex justify-between items-start">
         <div className="flex flex-col min-w-0">
-          <p className="text-sm font-medium text-foreground truncate">
-            {store.name}
-          </p>
+          <p className="text-sm font-medium text-foreground truncate">{store.name}</p>
           <p className="text-xs text-muted-foreground truncate">{store.city}</p>
         </div>
 
-        <SegmentBadge
-          segment={store.rfm_segment}
-          showLabel
-          className="text-xs"
-        />
+        <SegmentBadge segment={store.rfm_segment} showLabel className="text-xs" />
       </div>
 
       <div className="flex justify-between items-center">

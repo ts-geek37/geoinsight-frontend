@@ -12,8 +12,7 @@ interface Props {
 }
 
 const AppLayoutContent: React.FC<Props> = ({ children }) => {
-  const { view, storeId, openStore, openSimilar, returnToStore, close } =
-    usePanel();
+  const { view, storeId, openStore, openSimilar, returnToStore, close } = usePanel();
 
   const isOpen = view !== PanelView.CLOSED;
 
@@ -28,19 +27,11 @@ const AppLayoutContent: React.FC<Props> = ({ children }) => {
 
         <main className="flex-1 flex flex-col overflow-auto">{children}</main>
 
-        <PanelContainer
-          isOpen={isOpen && !!storeId && view === PanelView.STORE}
-        >
-          <StoreDetailsPanel
-            storeId={storeId || ""}
-            onClose={close}
-            onFindSimilar={openSimilar}
-          />
+        <PanelContainer isOpen={isOpen && !!storeId && view === PanelView.STORE}>
+          <StoreDetailsPanel storeId={storeId || ""} onClose={close} onFindSimilar={openSimilar} />
         </PanelContainer>
 
-        <PanelContainer
-          isOpen={isOpen && !!storeId && view === PanelView.SIMILAR}
-        >
+        <PanelContainer isOpen={isOpen && !!storeId && view === PanelView.SIMILAR}>
           <OpportunityPanel storeId={storeId || ""} onBack={returnToStore} />
         </PanelContainer>
       </div>

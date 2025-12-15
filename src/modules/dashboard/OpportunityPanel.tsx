@@ -24,10 +24,7 @@ interface OpportunityPanelProps {
   onBack: () => void;
 }
 
-const OpportunityPanel: React.FC<OpportunityPanelProps> = ({
-  storeId,
-  onBack,
-}) => {
+const OpportunityPanel: React.FC<OpportunityPanelProps> = ({ storeId, onBack }) => {
   const [selectedAreaId, setSelectedAreaId] = useState<number | null>(null);
   const { addAreaMarker, clearAreaMarkers } = useAreaMarkers();
   const { data, isError, isLoading } = useGetSimilarityForStoreQuery(storeId);
@@ -36,12 +33,8 @@ const OpportunityPanel: React.FC<OpportunityPanelProps> = ({
 
   const sortedAreas = useMemo(
     () =>
-      similarAreas
-        ? [...similarAreas].sort(
-            (a, b) => b.similarityScore - a.similarityScore
-          )
-        : [],
-    [similarAreas]
+      similarAreas ? [...similarAreas].sort((a, b) => b.similarityScore - a.similarityScore) : [],
+    [similarAreas],
   );
 
   const selectedArea = useMemo(() => {
@@ -60,8 +53,7 @@ const OpportunityPanel: React.FC<OpportunityPanelProps> = ({
   }, [sortedAreas, addAreaMarker, clearAreaMarkers]);
 
   if (isLoading) return <Loader />;
-  if (isError)
-    return <p className="p-4 text-sm text-red-500">Error loading data.</p>;
+  if (isError) return <p className="p-4 text-sm text-red-500">Error loading data.</p>;
   if (!data || !store) return null;
 
   return (
@@ -69,12 +61,9 @@ const OpportunityPanel: React.FC<OpportunityPanelProps> = ({
       <div className="flex flex-col gap-3 p-4 border-b border-border/40">
         <div className="flex flex-col md:flex-row justify-between gap-3">
           <div className="flex flex-col gap-1">
-            <h2 className="text-lg font-semibold text-foreground">
-              Opportunity Areas
-            </h2>
+            <h2 className="text-lg font-semibold text-foreground">Opportunity Areas</h2>
             <p className="text-sm text-muted-foreground">
-              Areas similar to{" "}
-              <span className="font-medium text-foreground">{store.name}</span>
+              Areas similar to <span className="font-medium text-foreground">{store.name}</span>
             </p>
           </div>
 
@@ -100,9 +89,7 @@ const OpportunityPanel: React.FC<OpportunityPanelProps> = ({
               <Table>
                 <TableHeader>
                   <TableRow className="border-border/30">
-                    <TableHead className="text-xs text-muted-foreground">
-                      Metric
-                    </TableHead>
+                    <TableHead className="text-xs text-muted-foreground">Metric</TableHead>
                     <TableHead className="text-right text-xs text-muted-foreground">
                       Store Area
                     </TableHead>
@@ -139,8 +126,7 @@ const OpportunityPanel: React.FC<OpportunityPanelProps> = ({
 
           <div className="flex flex-col gap-2 max-h-[300px] overflow-y-auto">
             {sortedAreas.map(({ area, similarityScore }, index) => {
-              const isSelected =
-                selectedAreaId === area.id || (!selectedAreaId && index === 0);
+              const isSelected = selectedAreaId === area.id || (!selectedAreaId && index === 0);
 
               return (
                 <div
@@ -150,7 +136,7 @@ const OpportunityPanel: React.FC<OpportunityPanelProps> = ({
                     "flex items-center justify-between rounded-lg p-3 cursor-pointer transition-all",
                     isSelected
                       ? "bg-segment-opportunity-bg border border-segment-opportunity"
-                      : "bg-card border border-border/30 hover:border-segment-opportunity/50"
+                      : "bg-card border border-border/30 hover:border-segment-opportunity/50",
                   )}
                 >
                   <div className="flex items-center gap-3">
@@ -159,12 +145,8 @@ const OpportunityPanel: React.FC<OpportunityPanelProps> = ({
                     </span>
 
                     <div className="flex flex-col leading-tight">
-                      <p className="text-sm font-medium text-foreground">
-                        {area.area_name}
-                      </p>
-                      <p className="text-xs text-muted-foreground">
-                        {area.city}
-                      </p>
+                      <p className="text-sm font-medium text-foreground">{area.area_name}</p>
+                      <p className="text-xs text-muted-foreground">{area.city}</p>
                     </div>
                   </div>
 
@@ -183,13 +165,13 @@ const OpportunityPanel: React.FC<OpportunityPanelProps> = ({
 
       <div className="p-4 border-t border-border">
         <Button
-          onClick={() => onExport(sortedAreas)}
+          onClick={() => onExport(sortedAreas, store)}
           className="w-full"
           size="lg"
           variant="outline"
         >
           <Download className="w-4 h-4 mr-2" />
-          Export Opportunity List (CSV)
+          Export Similar Areas (CSV)
         </Button>
       </div>
     </div>
