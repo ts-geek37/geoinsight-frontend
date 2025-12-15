@@ -1,7 +1,8 @@
 "use client";
 
 import { AreaProfile } from "@/types";
-import { createContext, useCallback, useContext, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { PanelView, usePanel } from "./PanelContext";
 
 interface AreaMarkerState {
   areaMarkers: AreaProfile[];
@@ -36,6 +37,12 @@ export const AreaMarkerProvider = ({ children }: { children: React.ReactNode }) 
     }),
     [areaMarkers],
   );
+  const { view } = usePanel();
+  const isOpportunityPanelOpen = view === PanelView.SIMILAR;
+
+  useEffect(() => {
+    if (!isOpportunityPanelOpen) clearAreaMarkers();
+  }, [isOpportunityPanelOpen]);
 
   return <AreaMarkerContext.Provider value={value}>{children}</AreaMarkerContext.Provider>;
 };
