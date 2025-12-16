@@ -16,8 +16,8 @@ const StoreMarker: React.FC<Props> = ({ store, isActive, onClick }) => {
   const formattedRevenue = getFormattedLatestRevenue(store.yearly_revenue)?.latestRevenue;
 
   const icon = useMemo(() => {
-    const size = isActive ? 18 : 14;
-    const border = isActive ? 2 : 0;
+    const size = isActive ? 13 : 12;
+    const border = isActive ? 1 : 0;
 
     return L.divIcon({
       className: "",

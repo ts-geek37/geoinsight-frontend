@@ -3,7 +3,7 @@
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer } from "react-leaflet";
 
-import { useAreaMarkers } from "@/context";
+import { PanelView, useAreaMarkers, usePanel } from "@/context";
 import { useGlobal } from "@/context/GlobalContext";
 import { MAP_STYLE_URLS } from "@/utils/mapStyle";
 import { AreaMarkers, HeatmapLayer, MapResizeHandler, StoreMarkers } from "./layers";
@@ -17,7 +17,7 @@ const INDIA_BOUNDS: [[number, number], [number, number]] = [
 const Map = () => {
   const { storeMap } = useGlobal();
   const { areaMarkers } = useAreaMarkers();
-
+  const { view } = usePanel();
   const style = MAP_STYLE_URLS[storeMap.mapStyle];
 
   return (
@@ -39,7 +39,9 @@ const Map = () => {
 
       {storeMap.markersEnabled && <StoreMarkers stores={storeMap.filteredStores} />}
 
-      {areaMarkers.length > 0 && storeMap.markersEnabled && <AreaMarkers />}
+      {areaMarkers.length > 0 && storeMap.markersEnabled && view === PanelView.SIMILAR && (
+        <AreaMarkers />
+      )}
     </MapContainer>
   );
 };

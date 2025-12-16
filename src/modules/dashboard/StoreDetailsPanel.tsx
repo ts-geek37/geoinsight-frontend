@@ -34,15 +34,15 @@ const StoreDetailsPanel: React.FC<StoreDetailsPanelProps> = ({
   onClose,
   onFindSimilar,
 }) => {
-  const { data, error, isLoading } = useGetStoreQuery(storeId);
+  const { data, error, isLoading,isFetching } = useGetStoreQuery(storeId);
   const store = data?.store ?? null;
   const sales = data?.sales ?? null;
   const kpis = useKpiSummary(store);
   const chartSalesData = useRollingSales(sales);
   const demographicRows = normalizeAreaProfile(store?.area);
   const poiItems = normalizeAreaPoi(store?.area);
-
-  if (isLoading) return <Loader />;
+  
+   if (isLoading || isFetching) return <Loader />;
   if (error) return <div>Failed to load store</div>;
   if (!data || !store || !sales) return null;
 

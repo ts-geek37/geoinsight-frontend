@@ -15,7 +15,7 @@ const AreaMarker: React.FC<Props> = ({ area }) => {
 
   const color = "var(--segment-opportunity)";
   const icon = useMemo(() => {
-    const size = 14;
+    const size = 12;
 
     return L.divIcon({
       className: "",
@@ -26,7 +26,6 @@ const AreaMarker: React.FC<Props> = ({ area }) => {
           height:${size}px;
           border-radius:50%;
           background:${color};
-          border:2px solid white;
           opacity:0.9;
           transition: transform .15s ease, opacity .15s ease;
         "></div>
