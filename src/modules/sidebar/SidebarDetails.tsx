@@ -60,7 +60,7 @@ const SidebarDetails: React.FC<Props> = ({ onSelectStore }) => {
 
   if (isError) {
     return (
-      <div className="flex h-full items-center justify-center">
+      <div className="flex h-full items-center justify-center bg-background">
         <p className="text-sm text-destructive">Error loading store data.</p>
       </div>
     );

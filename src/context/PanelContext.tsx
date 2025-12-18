@@ -124,7 +124,7 @@ export const PanelContainer: React.FC<PanelContainerProps> = ({ children, isOpen
     <Dialog open={isOpen} onOpenChange={(o) => !o && close()}>
       <DialogContent
         showCloseButton={false}
-        className="fixed inset-x-4 bottom-0 left-1/2 z-[1001] h-[92dvh] sm:h-[88vh] w-[calc(100%-2rem)] -translate-x-1/2 rounded-t-2xl border bg-background p-0 flex flex-col overflow-hidden data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom duration-300"
+        className="fixed inset-x-4 bottom-0 left-1/2 z-[1001] h-[92dvh] sm:h-[88vh] w-[calc(100%-2rem)] -translate-x-1/2 rounded-t-2xl border bg-background p-0 flex flex-col overflow-hidden"
       >
         <DialogTitle className="sr-only">Panel</DialogTitle>
         {children}
