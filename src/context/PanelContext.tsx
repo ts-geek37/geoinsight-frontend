@@ -2,6 +2,9 @@
 
 import { createContext, ReactNode, useContext, useEffect, useReducer, useState } from "react";
 
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { cn } from "@/lib/utils";
+
 export enum PanelView {
   CLOSED = "CLOSED",
   STORE = "STORE",
@@ -11,6 +14,7 @@ export enum PanelView {
 interface PanelState {
   view: PanelView;
   storeId: string | null;
+  previousView: PanelView | null;
 }
 
 type PanelAction =
@@ -22,23 +26,35 @@ type PanelAction =
 const initialState: PanelState = {
   view: PanelView.CLOSED,
   storeId: null,
+  previousView: null,
 };
 
 function panelReducer(state: PanelState, action: PanelAction): PanelState {
   switch (action.type) {
     case "OPEN_STORE":
-      return { view: PanelView.STORE, storeId: action.payload };
-
+      return {
+        view: PanelView.STORE,
+        storeId: action.payload,
+        previousView: state.view,
+      };
     case "OPEN_SIMILAR":
-      return { view: PanelView.SIMILAR, storeId: action.payload };
-
+      return {
+        view: PanelView.SIMILAR,
+        storeId: action.payload,
+        previousView: state.view,
+      };
     case "RETURN_TO_STORE":
       if (!state.storeId) return state;
-      return { view: PanelView.STORE, storeId: state.storeId };
-
+      return {
+        view: PanelView.STORE,
+        storeId: state.storeId,
+        previousView: state.view,
+      };
     case "CLOSE":
-      return initialState;
-
+      return {
+        ...initialState,
+        previousView: state.view,
+      };
     default:
       return state;
   }
@@ -56,15 +72,19 @@ const PanelContext = createContext<PanelContextType | undefined>(undefined);
 export const PanelProvider = ({ children }: { children: ReactNode }) => {
   const [state, dispatch] = useReducer(panelReducer, initialState);
 
-  const value: PanelContextType = {
-    ...state,
-    openStore: (id) => dispatch({ type: "OPEN_STORE", payload: id }),
-    openSimilar: (id) => dispatch({ type: "OPEN_SIMILAR", payload: id }),
-    returnToStore: () => dispatch({ type: "RETURN_TO_STORE" }),
-    close: () => dispatch({ type: "CLOSE" }),
-  };
-
-  return <PanelContext.Provider value={value}>{children}</PanelContext.Provider>;
+  return (
+    <PanelContext.Provider
+      value={{
+        ...state,
+        openStore: (id) => dispatch({ type: "OPEN_STORE", payload: id }),
+        openSimilar: (id) => dispatch({ type: "OPEN_SIMILAR", payload: id }),
+        returnToStore: () => dispatch({ type: "RETURN_TO_STORE" }),
+        close: () => dispatch({ type: "CLOSE" }),
+      }}
+    >
+      {children}
+    </PanelContext.Provider>
+  );
 };
 
 export const usePanel = () => {
@@ -79,35 +99,76 @@ interface PanelContainerProps {
 }
 
 export const PanelContainer: React.FC<PanelContainerProps> = ({ children, isOpen }) => {
-  const [shouldRender, setShouldRender] = useState(isOpen);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const { close } = usePanel();
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
-    if (!isOpen) {
-      setIsAnimating(false);
-      return;
-    }
+    const mq = window.matchMedia("(min-width: 768px)");
+    const update = () => setIsDesktop(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
-    setShouldRender(true);
-
-    const id = requestAnimationFrame(() => {
-      setIsAnimating(true);
-    });
-
-    return () => cancelAnimationFrame(id);
-  }, [isOpen]);
-  if (!shouldRender) return null;
+  if (isDesktop && isOpen) {
+    return (
+      <div className="pointer-events-none fixed inset-0 z-[950]">
+        <div className="pointer-events-auto absolute right-4 top-20 bottom-4 w-[420px] max-w-[90vw] rounded-2xl border bg-background/95 backdrop-blur shadow-2xl flex flex-col overflow-hidden">
+          {children}
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <aside
-      className={`flex-shrink-0 overflow-hidden transition-all duration-300 ease-in-out ${
-        isAnimating ? "w-full md:w-[28vw] opacity-100" : "w-0 opacity-0"
-      }`}
-      style={{
-        transitionProperty: "width, opacity",
-      }}
+    <Dialog open={isOpen} onOpenChange={(o) => !o && close()}>
+      <DialogContent
+        showCloseButton={false}
+        className="fixed inset-x-4 bottom-0 left-1/2 z-[1001] h-[92dvh] sm:h-[88vh] w-[calc(100%-2rem)] -translate-x-1/2 rounded-t-2xl border bg-background p-0 flex flex-col overflow-hidden data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom duration-300"
+      >
+        <DialogTitle className="sr-only">Panel</DialogTitle>
+        {children}
+      </DialogContent>
+    </Dialog>
+  );
+};
+
+interface PanelContentWrapperProps {
+  children: ReactNode;
+  panelKey: string;
+}
+
+export const PanelContentWrapper: React.FC<PanelContentWrapperProps> = ({ children, panelKey }) => {
+  const [displayedKey, setDisplayedKey] = useState(panelKey);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [displayedChildren, setDisplayedChildren] = useState(children);
+
+  useEffect(() => {
+    if (panelKey !== displayedKey) {
+      setIsTransitioning(true);
+
+      const timer = setTimeout(() => {
+        setDisplayedKey(panelKey);
+        setDisplayedChildren(children);
+        requestAnimationFrame(() => {
+          setIsTransitioning(false);
+        });
+      }, 150);
+
+      return () => clearTimeout(timer);
+    } else {
+      setDisplayedChildren(children);
+    }
+  }, [panelKey, displayedKey, children]);
+
+  return (
+    <div
+      className={cn(
+        "flex-1 flex flex-col min-h-0 transition-all duration-150 ease-in-out",
+        isTransitioning ? "opacity-0 scale-[0.98]" : "opacity-100 scale-100",
+      )}
     >
-      <div className="w-full md:w-[28vw] h-full">{children}</div>
-    </aside>
+      {displayedChildren}
+    </div>
   );
 };

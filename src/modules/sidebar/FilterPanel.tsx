@@ -58,7 +58,7 @@ const FilterPanel = () => {
   const selectedSegments = filters.segment || [];
 
   return (
-    <div className="flex flex-col gap-4 p-4 border-b border-border/40 bg-background">
+    <div className="flex flex-col gap-4 p-4 border-b border-border/40">
       <div className="flex gap-3">
         <div className="flex flex-col gap-1 flex-1">
           <Label className="text-xs text-muted-foreground">State</Label>

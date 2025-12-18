@@ -3,7 +3,7 @@
 import React from "react";
 
 import Header from "@/components/Header";
-import { PanelContainer, PanelView, Sidebar, usePanel } from "@/context";
+import { PanelContainer, PanelContentWrapper, PanelView, Sidebar, usePanel } from "@/context";
 import { OpportunityPanel, StoreDetailsPanel } from "@/modules/dashboard";
 import { SidebarDetails } from "@/modules/sidebar";
 
@@ -11,36 +11,40 @@ interface Props {
   children: React.ReactNode;
 }
 
-const AppLayoutContent: React.FC<Props> = ({ children }) => {
+const AppLayout: React.FC<Props> = ({ children }) => {
   const { view, storeId, openStore, openSimilar, returnToStore, close } = usePanel();
 
-  const isOpen = view !== PanelView.CLOSED;
-
-  return (
+  const isPanelOpen = view !== PanelView.CLOSED && !!storeId;
+   return (
     <>
       <Header />
 
-      <div className="flex h-[calc(100vh-64px)]">
+      <div className="flex h-[calc(100dvh-64px)] overflow-hidden">
         <Sidebar>
           <SidebarDetails onSelectStore={(st) => openStore(st.id)} />
         </Sidebar>
 
-        <main className="flex-1 flex flex-col overflow-auto">{children}</main>
-
-        <PanelContainer isOpen={isOpen && !!storeId && view === PanelView.STORE}>
-          <StoreDetailsPanel storeId={storeId || ""} onClose={close} onFindSimilar={openSimilar} />
-        </PanelContainer>
-
-        <PanelContainer isOpen={isOpen && !!storeId && view === PanelView.SIMILAR}>
-          <OpportunityPanel storeId={storeId || ""} onBack={returnToStore} />
-        </PanelContainer>
+        <main className="flex flex-1 flex-col overflow-hidden">{children}</main>
       </div>
+
+      <PanelContainer isOpen={isPanelOpen}>
+        <PanelContentWrapper panelKey={view}>
+          {view === PanelView.STORE && storeId && (
+            <StoreDetailsPanel
+              key={`store-${storeId}`}
+              storeId={storeId}
+              onClose={close}
+              onFindSimilar={openSimilar}
+            />
+          )}
+
+          {view === PanelView.SIMILAR && storeId && (
+            <OpportunityPanel key={`similar-${storeId}`} storeId={storeId} onBack={returnToStore} />
+          )}
+        </PanelContentWrapper>
+      </PanelContainer>
     </>
   );
-};
-
-export const AppLayout = ({ children }: Props) => {
-  return <AppLayoutContent>{children}</AppLayoutContent>;
 };
 
 export default AppLayout;

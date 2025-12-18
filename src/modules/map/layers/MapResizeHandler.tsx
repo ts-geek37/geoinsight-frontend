@@ -1,8 +1,9 @@
-// SmoothMapResize.tsx
 "use client";
-import { PanelView, usePanel, useSidebar } from "@/context";
+
 import { useEffect } from "react";
 import { useMap } from "react-leaflet";
+
+import { PanelView, usePanel, useSidebar } from "@/context";
 
 const MapResizeHandler = () => {
   const map = useMap();
@@ -11,25 +12,22 @@ const MapResizeHandler = () => {
   const isOpen = view !== PanelView.CLOSED;
 
   useEffect(() => {
-    let frame: number;
-    let start: number | null = null;
-    const duration = 300;
+    const container = map.getContainer();
 
-    const animate = (timestamp: number) => {
-      if (!start) start = timestamp;
-      const progress = timestamp - start;
+    if (!container) return;
 
-      map.invalidateSize();
+    const observer = new ResizeObserver(() => {
+      const { width, height } = container.getBoundingClientRect();
 
-      if (progress < duration) {
-        frame = requestAnimationFrame(animate);
-      }
-    };
+      if (width === 0 || height === 0) return;
 
-    frame = requestAnimationFrame(animate);
+      map.invalidateSize({ animate: false });
+    });
 
-    return () => cancelAnimationFrame(frame);
-  }, [open, map, isOpen]);
+    observer.observe(container);
+
+    return () => observer.disconnect();
+  }, [map, open, isOpen]);
 
   return null;
 };

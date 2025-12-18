@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { ChevronLeft } from "lucide-react";
 import * as React from "react";
 
 const SidebarContext = React.createContext<{
@@ -16,7 +15,7 @@ export const useSidebar = () => {
 };
 
 export const SidebarProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const toggleSidebar = React.useCallback(() => setOpen((prev) => !prev), []);
 
   return (
@@ -24,35 +23,28 @@ export const SidebarProvider: React.FC<{ children: React.ReactNode }> = ({ child
   );
 };
 
+const HEADER_HEIGHT = 64;
+
 const Sidebar: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { open, toggleSidebar } = useSidebar();
+  const { open } = useSidebar();
 
   return (
-    <div className="flex h-full">
+    <div
+      className="pointer-events-none fixed left-0 z-[900]"
+      style={{
+        top: HEADER_HEIGHT,
+        height: `calc(100vh - ${HEADER_HEIGHT}px)`,
+      }}
+    >
       <div
         className={cn(
-          "h-full overflow-hidden bg-background border-r border-gray-300 transition-all duration-300",
-          open ? "w-[20vw]" : "w-0",
+          "pointer-events-auto h-full w-[100vw] md:w-[22vw] border-r  transition-transform duration-200 ease-in",
+          open ? "translate-x-0" : "-translate-x-full",
         )}
       >
         <div className="h-full overflow-y-auto">{children}</div>
       </div>
-
-      <div
-        className="w-6 h-full border-r border-gray-500 flex items-center justify-center"
-        onClick={toggleSidebar}
-      >
-        <button className="h-16 w-full flex items-center justify-center hover:bg-gray-100 transition-colors">
-          <ChevronLeft
-            className={cn(
-              "w-4 h-4 text-gray-600 transition-transform duration-300",
-              !open && "rotate-180",
-            )}
-          />
-        </button>
-      </div>
     </div>
   );
 };
-
 export default Sidebar;
