@@ -33,3 +33,40 @@ export type StoreAreaSummaryResponse = {
   generated_at: string;
   results: StoreAreaSummaryItem[];
 };
+
+export interface SimilarityResponseDTO {
+  store: {
+    id: string;
+    name: string;
+  };
+  baseArea: {
+    id: number;
+    name: string;
+  };
+  candidates: {
+    area: {
+      id: number;
+      name: string;
+      city: string;
+      latitude: number;
+      longitude: number;
+    };
+    similarityScore: number;
+    metrics: {
+      label: string;
+      store: string;
+      candidate: string;
+    }[];
+  }[];
+}
+
+export interface AreaMarkerDTO {
+  id: number;
+  name: string;
+  city: string;
+  state?: string;
+  latitude: number;
+  longitude: number;
+  similarityScore: number;
+  population3km?: string;
+}

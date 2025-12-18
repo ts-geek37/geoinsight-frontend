@@ -1,5 +1,3 @@
-import { SimilarAreaResult } from "@/types";
-
 export const exportToCSV = (
   filename: string,
   headers: string[],
@@ -40,61 +38,45 @@ export const exportToCSV = (
   URL.revokeObjectURL(url);
 };
 
-export const onExport = (
-  sortedAreas: SimilarAreaResult[],
-  store: { name: string; city?: string; state?: string },
-) => {
-  const headers = [
-    "Base Store Name",
-    "Base Store City",
-    "Base Store State",
-    "Similarity Rank",
-    "Similarity Score (%)",
-    "Priority Score",
+import { SimilarityResponseDTO } from "@/types";
 
+export const onExport = (
+  candidates: SimilarityResponseDTO["candidates"],
+  store: { name: string },
+) => {
+  const baseHeaders = [
+    "Base Store Name",
+    "Similarity Rank",
     "Area Name",
     "City",
-    "State",
-
-    "Population (1km)",
-    "Population (3km)",
-    "Population (5km)",
-
-    "Literacy Rate (%)",
-    "Age 25–55 (%)",
-    "Income High (%)",
-
-    "POI Total",
-    "POI Normalized",
-    "POI Activity Score",
-    "Urban Score",
+    "Similarity Score (%)",
   ];
 
-  const rows = sortedAreas.map(({ area, similarityScore, priorityScore }, index) => ({
-    "Base Store Name": store.name,
-    "Base Store City": store.city ?? "",
-    "Base Store State": store.state ?? "",
+  const metricLabels = candidates[0]?.metrics.map((m) => m.label) ?? [];
 
-    "Similarity Rank": index + 1,
-    "Similarity Score (%)": similarityScore,
-    "Priority Score": priorityScore,
+  const headers = [
+    ...baseHeaders,
+    ...metricLabels.map((l) => `Store - ${l}`),
+    ...metricLabels.map((l) => `Candidate - ${l}`),
+  ];
 
-    "Area Name": area.area_name ?? "",
-    City: area.city ?? "",
-    State: area.state ?? "",
+  const rows = candidates.map((item, index) => {
+    const metricMap: Record<string, string> = {};
 
-    "Population (1km)": area.population_1km ?? 0,
-    "Population (3km)": area.population_3km ?? 0,
-    "Population (5km)": area.population_5km ?? 0,
+    item.metrics.forEach((m) => {
+      metricMap[`Store - ${m.label}`] = m.store;
+      metricMap[`Candidate - ${m.label}`] = m.candidate;
+    });
 
-    "Literacy Rate (%)": area.literacy_rate ?? 0,
-    "Age 25–55 (%)": area.age_25_55_pct ?? 0,
-    "Income High (%)": area.income_high_percentage ?? 0,
-
-    "POI Total": area.poi_total ?? 0,
-    "POI Normalized": area.poi_normalized ?? 0,
-    "Urban Score": area.urban_score ?? 0,
-  }));
+    return {
+      "Base Store Name": store.name,
+      "Similarity Rank": index + 1,
+      "Area Name": item.area.name,
+      City: item.area.city,
+      "Similarity Score (%)": item.similarityScore,
+      ...metricMap,
+    };
+  });
 
   exportToCSV(`similar_areas_for_${store.name.replace(/\s+/g, "_").toLowerCase()}`, headers, rows);
 };

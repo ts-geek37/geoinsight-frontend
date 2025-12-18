@@ -1,19 +1,14 @@
 "use client";
 
 import { Download, RotateCcw, StoreIcon } from "lucide-react";
-import React, { memo } from "react";
+import { memo } from "react";
 
 import Loader from "@/components/common/loader";
 import { Button } from "@/components/ui/button";
 import { useGlobal } from "@/context/GlobalContext";
-import { Store } from "@/types";
-import useExportAllStoresCsv from "../dashboard/hooks/useExportAllStoresCsv";
+import { useExportAllStoresCsv } from "../dashboard/hooks";
 import FilterPanel from "./FilterPanel";
 import StoreCard from "./StoreCard";
-
-interface SidebarDetailsProps {
-  onSelectStore: (store: Store) => void;
-}
 
 const SidebarHeader = memo(
   ({ count, onReset, onExport }: { count: number; onReset: () => void; onExport: () => void }) => (
@@ -50,18 +45,18 @@ const SidebarHeader = memo(
 );
 SidebarHeader.displayName = "SidebarHeader";
 
-const SidebarDetails: React.FC<SidebarDetailsProps> = ({ onSelectStore }) => {
+interface Props {
+  onSelectStore: (id: string) => void;
+}
+
+const SidebarDetails: React.FC<Props> = ({ onSelectStore }) => {
   const {
-    storesData: { isLoading, isError },
-    storeMap,
+    storeMap: { filteredStores, isLoading, isError, clearFilters },
   } = useGlobal();
 
-  const filteredStores = storeMap.filteredStores;
   const { exportStoresCsv } = useExportAllStoresCsv(filteredStores);
 
-  if (isLoading) {
-    return <Loader className="bg-background" />;
-  }
+  if (isLoading) return <Loader className="bg-background" />;
 
   if (isError) {
     return (
@@ -75,20 +70,18 @@ const SidebarDetails: React.FC<SidebarDetailsProps> = ({ onSelectStore }) => {
     <div className="flex flex-col h-full bg-background">
       <SidebarHeader
         count={filteredStores.length}
-        onReset={storeMap.clearFilters}
+        onReset={clearFilters}
         onExport={exportStoresCsv}
       />
 
       <div className="flex-1 overflow-y-auto p-3 space-y-2">
         {filteredStores.length === 0 ? (
-          <div className="flex flex-col items-center justify-center h-full text-center px-4">
-            <StoreIcon className="w-12 h-12 text-muted-foreground/30 mb-3" />
-            <p className="text-sm font-medium text-muted-foreground">No stores found</p>
-            <p className="text-xs text-muted-foreground/70 mt-1">Try adjusting your filters</p>
+          <div className="flex items-center justify-center h-full text-sm text-muted-foreground">
+            No stores found
           </div>
         ) : (
-          filteredStores
-            .sort((a, b) => b.rfm_score - a.rfm_score)
+          [...filteredStores]
+            .sort((a, b) => b.rfmScore - a.rfmScore)
             .map((store) => <StoreCard key={store.id} store={store} onClick={onSelectStore} />)
         )}
       </div>

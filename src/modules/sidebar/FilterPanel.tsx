@@ -17,45 +17,40 @@ import { cn } from "@/lib/utils";
 const baseSelect =
   "bg-secondary/30 border-border/40 text-foreground transition-colors hover:bg-accent w-full rounded-lg";
 
+const formatValue = (v: number) =>
+  v >= 1_00_00_000
+    ? (v / 1_00_00_000).toFixed(2) + " Cr"
+    : v >= 1_00_000
+      ? (v / 1_00_000).toFixed(2) + " L"
+      : v.toFixed(0);
+
 const FilterPanel = () => {
   const {
-    storesData: { stores = [] },
-    storeMap: { filters, dispatch, stateOptions, cityOptions },
+    storeMap: { filters, dispatch, raw },
   } = useGlobal();
+
+  if (!raw) return null;
+
+  const { states, citiesByState, revenueMin, revenueMax } = raw.filters;
+
+  const cityOptions = filters.state === "all" ? [] : (citiesByState[filters.state] ?? []);
 
   const segments = [SEGMENT_ENUM.CHAMPION, SEGMENT_ENUM.PROMISING, SEGMENT_ENUM.NEEDS_ATTENTION];
 
-  const latestRevenues = stores.map((s) => {
-    const yearly = s.yearly_revenue;
-    if (!yearly?.length) return 0;
-    const latest = yearly.reduce((a, b) => (a.year > b.year ? a : b));
-    return Number(latest.revenue_inr);
-  });
-
-  const maxRevenue = Math.max(...latestRevenues, 10000000);
-
-  const revenueRange = [
-    filters.revenueRange?.min ?? 0,
-    filters.revenueRange?.max ?? maxRevenue,
-  ] as [number, number];
+  const revenueRange: [number, number] = [
+    filters.revenueRange.min ?? revenueMin,
+    filters.revenueRange.max ?? revenueMax,
+  ];
 
   const toggleSegment = (segment: SEGMENT_ENUM) => {
-    const active = filters.segment || [];
-    const updated = active.includes(segment)
-      ? active.filter((s) => s !== segment)
-      : [...active, segment];
-
-    dispatch({ type: "SET_SEGMENT", payload: updated });
+    const active = filters.segment;
+    dispatch({
+      type: "SET_SEGMENT",
+      payload: active.includes(segment)
+        ? active.filter((s) => s !== segment)
+        : [...active, segment],
+    });
   };
-
-  const formatValue = (v: number) =>
-    v >= 10000000
-      ? (v / 10000000).toFixed(2) + " Cr"
-      : v >= 100000
-        ? (v / 100000).toFixed(2) + " L"
-        : v.toFixed(0);
-
-  const selectedSegments = filters.segment || [];
 
   return (
     <div className="flex flex-col gap-4 p-4 border-b border-border/40">
@@ -63,15 +58,16 @@ const FilterPanel = () => {
         <div className="flex flex-col gap-1 flex-1">
           <Label className="text-xs text-muted-foreground">State</Label>
           <Select
-            value={filters.state}
+            value={filters.state ?? "all"}
             onValueChange={(v) => dispatch({ type: "SET_STATE", payload: v })}
           >
             <SelectTrigger className={baseSelect}>
               <SelectValue placeholder="Select State" />
             </SelectTrigger>
-            <SelectContent>
+
+            <SelectContent position="popper" className="z-[1000]">
               <SelectItem value="all">All States</SelectItem>
-              {stateOptions.map((state) => (
+              {states.map((state) => (
                 <SelectItem key={state} value={state}>
                   {state}
                 </SelectItem>
@@ -83,13 +79,14 @@ const FilterPanel = () => {
         <div className="flex flex-col gap-1 flex-1">
           <Label className="text-xs text-muted-foreground">City</Label>
           <Select
-            value={filters.city}
+            value={filters.city ?? "all"}
             onValueChange={(v) => dispatch({ type: "SET_CITY", payload: v })}
           >
             <SelectTrigger className={baseSelect}>
               <SelectValue placeholder="Select City" />
             </SelectTrigger>
-            <SelectContent>
+
+            <SelectContent position="popper" className="z-[1000]">
               <SelectItem value="all">All Cities</SelectItem>
               {cityOptions.map((city) => (
                 <SelectItem key={city} value={city}>
@@ -105,7 +102,7 @@ const FilterPanel = () => {
         <Label className="text-xs text-muted-foreground">RFM Segment</Label>
         <div className="flex flex-wrap gap-1.5">
           {segments.map((segment) => {
-            const active = selectedSegments.includes(segment);
+            const active = filters.segment.includes(segment);
             return (
               <button key={segment} onClick={() => toggleSegment(segment)}>
                 <SegmentBadge
@@ -128,8 +125,8 @@ const FilterPanel = () => {
 
         <Slider
           value={revenueRange}
-          min={0}
-          max={maxRevenue}
+          min={revenueMin}
+          max={revenueMax}
           step={1000}
           onValueChange={(v) =>
             dispatch({
@@ -140,7 +137,7 @@ const FilterPanel = () => {
         />
 
         <div className="flex justify-between">
-          {[revenueRange[0], revenueRange[1]].map((v, i) => (
+          {revenueRange.map((v, i) => (
             <span key={i} className="text-xs bg-background-background px-2 py-0.5 rounded">
               ₹{formatValue(v)}
             </span>

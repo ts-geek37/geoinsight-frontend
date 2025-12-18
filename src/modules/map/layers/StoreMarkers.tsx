@@ -4,25 +4,21 @@ import { memo, useCallback } from "react";
 import { LayerGroup } from "react-leaflet";
 
 import { usePanel } from "@/context";
-import { Store } from "@/types";
+import { StoreMapItemDTO } from "@/types";
 import StoreMarker from "./StoreMarker";
 
 interface Props {
-  stores: Store[];
+  stores: StoreMapItemDTO[];
 }
 
 const StoreMarkersComponent: React.FC<Props> = ({ stores }) => {
-  const { storeId: activeStoreId, openStore, close } = usePanel();
+  const { storeId: activeId, openStore, close } = usePanel();
 
-  const handleMarkerClick = useCallback(
-    (storeId: string) => {
-      if (storeId === activeStoreId) {
-        close();
-      } else {
-        openStore(storeId);
-      }
+  const onClick = useCallback(
+    (id: string) => {
+      id === activeId ? close() : openStore(id);
     },
-    [activeStoreId, openStore, close],
+    [activeId, openStore, close],
   );
 
   return (
@@ -31,13 +27,13 @@ const StoreMarkersComponent: React.FC<Props> = ({ stores }) => {
         <StoreMarker
           key={store.id}
           store={store}
-          isActive={store.id === activeStoreId}
-          onClick={handleMarkerClick}
+          isActive={store.id === activeId}
+          onClick={onClick}
         />
       ))}
     </LayerGroup>
   );
 };
 
-export const StoreMarkers = memo(StoreMarkersComponent);
+const StoreMarkers = memo(StoreMarkersComponent);
 export default StoreMarkers;

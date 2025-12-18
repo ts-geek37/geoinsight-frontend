@@ -1,11 +1,15 @@
-import type { ApiResponse, SimilarStoreResult, StoreAreaSummaryResponse } from "@/types";
+import type {
+  ApiResponse,
+  SimilarityResponseDTO,
+  StoreAreaSummaryResponse
+} from "@/types";
 import { geoinsightApi } from "./geoinsightApi";
 
 export const similarityApi = geoinsightApi.injectEndpoints({
   endpoints: (builder) => ({
-    getSimilarityForStore: builder.query<SimilarStoreResult, string>({
+    getSimilarityForStore: builder.query<SimilarityResponseDTO, string>({
       query: (storeId) => `/similarity/store/${storeId}`,
-      transformResponse: (response: ApiResponse<SimilarStoreResult>) => response.data,
+      transformResponse: (response: ApiResponse<SimilarityResponseDTO>) => response.data,
       providesTags: (_result, _err, storeId) => [{ type: "Similarity", id: storeId }],
     }),
 

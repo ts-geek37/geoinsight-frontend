@@ -1,12 +1,13 @@
 "use client";
 
-import { AreaProfile } from "@/types";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+
+import { AreaMarkerDTO } from "@/types";
 import { PanelView, usePanel } from "./PanelContext";
 
 interface AreaMarkerState {
-  areaMarkers: AreaProfile[];
-  addAreaMarker: (m: AreaProfile) => void;
+  areaMarkers: AreaMarkerDTO[];
+  addAreaMarker: (m: AreaMarkerDTO) => void;
   removeAreaMarker: (i: number) => void;
   clearAreaMarkers: () => void;
 }
@@ -14,10 +15,10 @@ interface AreaMarkerState {
 const AreaMarkerContext = createContext<AreaMarkerState | null>(null);
 
 export const AreaMarkerProvider = ({ children }: { children: React.ReactNode }) => {
-  const [areaMarkers, setAreaMarkers] = useState<AreaProfile[]>([]);
+  const [areaMarkers, setAreaMarkers] = useState<AreaMarkerDTO[]>([]);
 
   const addAreaMarker = useCallback(
-    (marker: AreaProfile) => setAreaMarkers((prev) => [...prev, marker]),
+    (marker: AreaMarkerDTO) => setAreaMarkers((prev) => [...prev, marker]),
     [],
   );
 
@@ -26,7 +27,9 @@ export const AreaMarkerProvider = ({ children }: { children: React.ReactNode }) 
     [],
   );
 
-  const clearAreaMarkers = useCallback(() => setAreaMarkers([]), []);
+  const clearAreaMarkers = useCallback(() => {
+    setAreaMarkers((prev) => (prev.length ? [] : prev));
+  }, []);
 
   const value = useMemo(
     () => ({
@@ -35,14 +38,17 @@ export const AreaMarkerProvider = ({ children }: { children: React.ReactNode }) 
       removeAreaMarker,
       clearAreaMarkers,
     }),
-    [areaMarkers],
+    [areaMarkers, addAreaMarker, removeAreaMarker, clearAreaMarkers],
   );
+
   const { view } = usePanel();
   const isOpportunityPanelOpen = view === PanelView.SIMILAR;
 
   useEffect(() => {
-    if (!isOpportunityPanelOpen) clearAreaMarkers();
-  }, [isOpportunityPanelOpen]);
+    if (!isOpportunityPanelOpen && areaMarkers.length > 0) {
+      clearAreaMarkers();
+    }
+  }, [isOpportunityPanelOpen, areaMarkers.length, clearAreaMarkers]);
 
   return <AreaMarkerContext.Provider value={value}>{children}</AreaMarkerContext.Provider>;
 };

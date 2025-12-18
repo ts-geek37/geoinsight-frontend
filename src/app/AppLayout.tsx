@@ -21,7 +21,7 @@ const AppLayout: React.FC<Props> = ({ children }) => {
 
       <div className="flex h-[calc(100dvh-64px)] overflow-hidden">
         <Sidebar>
-          <SidebarDetails onSelectStore={(st) => openStore(st.id)} />
+          <SidebarDetails onSelectStore={(st) => openStore(st)} />
         </Sidebar>
 
         <main className="flex flex-1 flex-col overflow-hidden">{children}</main>

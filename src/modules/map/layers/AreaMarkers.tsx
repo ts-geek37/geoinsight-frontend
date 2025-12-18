@@ -7,7 +7,7 @@ import AreaMarker from "./AreaMarker";
 
 const AreaMarkersComponent: React.FC = () => {
   const { areaMarkers } = useAreaMarkers();
-
+console.log('ar',areaMarkers);
   return (
     <LayerGroup>
       {areaMarkers.map((area, i) => (

@@ -1,19 +1,20 @@
-import { Store } from "@/types";
-import { getFormattedLatestRevenue } from "@/utils/formatRevenue";
-import getMarkerColor from "@/utils/rfm";
+"use client";
+
 import L from "leaflet";
 import { memo, useMemo } from "react";
 import { Marker, Tooltip } from "react-leaflet";
 
+import { StoreMapItemDTO } from "@/types";
+import getMarkerColor from "@/utils/rfm";
+
 interface Props {
-  store: Store;
+  store: StoreMapItemDTO;
   isActive: boolean;
   onClick: (id: string) => void;
 }
 
 const StoreMarker: React.FC<Props> = ({ store, isActive, onClick }) => {
-  const color = getMarkerColor(store.rfm_segment);
-  const formattedRevenue = getFormattedLatestRevenue(store.yearly_revenue)?.latestRevenue;
+  const color = getMarkerColor(store.rfmSegment);
 
   const icon = useMemo(() => {
     const size = isActive ? 13 : 12;
@@ -29,7 +30,8 @@ const StoreMarker: React.FC<Props> = ({ store, isActive, onClick }) => {
           border-radius:50%;
           background:${color};
           border:${border}px solid white;
-          transition: transform .15s ease, opacity .15s ease;
+                    transition: transform .15s ease, opacity .15s ease;
+
         "></div>
       `,
     });
@@ -39,18 +41,9 @@ const StoreMarker: React.FC<Props> = ({ store, isActive, onClick }) => {
     <Marker
       position={[store.latitude, store.longitude]}
       icon={icon}
-      eventHandlers={{
-        click: () => onClick(store.id),
-
-        mouseout: (e) => {
-          const el = e.target._icon.firstChild;
-          if (!el || !el?.style) return;
-
-          el.style.opacity = isActive ? "1" : "0.85";
-        },
-      }}
+      eventHandlers={{ click: () => onClick(store.id) }}
     >
-      <Tooltip direction="top" offset={[0, -10]} opacity={1}>
+       <Tooltip direction="top" offset={[0, -10]} opacity={1}>
         <div className="text-xs px-3 py-2 space-y-2 leading-tight">
           <div>
             <p className="font-medium text-gray-900">{store.name}</p>
@@ -64,14 +57,14 @@ const StoreMarker: React.FC<Props> = ({ store, isActive, onClick }) => {
             <div className="flex items-center justify-between text-[11px]">
               <span className="uppercase tracking-wide text-gray-500">RFM</span>
               <span className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">
-                {store.rfm_score}
+                {store.rfmScore}
               </span>
             </div>
 
             <div className="flex items-center justify-between text-[11px]">
               <span className="uppercase tracking-wide text-gray-500">Revenue</span>
               <span className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">
-                {formattedRevenue}
+                {store.latestRevenueFormatted}
               </span>
             </div>
           </div>

@@ -1,20 +1,18 @@
-import type { ApiListResponse, ApiResponse, Store, StoreSales } from "@/types";
+import type { ApiResponse, StoreDetailsDTO, StoreMapResponseDTO } from "@/types";
 import { geoinsightApi } from "./geoinsightApi";
 
 export const storeApi = geoinsightApi.injectEndpoints({
   endpoints: (builder) => ({
-    getStores: builder.query<Store[], void>({
+    getStores: builder.query<StoreMapResponseDTO, void>({
       query: () => "/stores",
-      transformResponse: (response: ApiListResponse<Store>) => response.data,
-      providesTags: ["Store"],
+      transformResponse: (res: ApiResponse<StoreMapResponseDTO>) => res.data,
     }),
-
-    getStore: builder.query<StoreSales, string>({
-      query: (storeId) => `/stores/${storeId}`,
-      transformResponse: (response: ApiResponse<StoreSales>) => response.data,
+    getStoreDetails: builder.query<StoreDetailsDTO, string>({
+      query: (storeId) => `/stores/${storeId}/details`,
+      transformResponse: (response: ApiResponse<StoreDetailsDTO>) => response.data,
       providesTags: (_result, _err, storeId) => [{ type: "Store", id: storeId }],
     }),
   }),
 });
 
-export const { useGetStoresQuery, useGetStoreQuery, useLazyGetStoreQuery } = storeApi;
+export const { useGetStoresQuery, useGetStoreDetailsQuery, useLazyGetStoreDetailsQuery } = storeApi;

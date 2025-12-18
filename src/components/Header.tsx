@@ -13,9 +13,8 @@ import { MAP_STYLE_URLS } from "@/utils/mapStyle";
 
 const Header: React.FC = () => {
   const {
-    storeMap: {
-      filters,
-      dispatch,
+    storeMap: { filters, dispatch },
+    ui: {
       heatmapEnabled,
       setHeatmapEnabled,
       markersEnabled,

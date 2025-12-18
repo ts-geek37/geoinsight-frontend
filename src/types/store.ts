@@ -34,18 +34,96 @@ export type Store = {
   }[];
 };
 
-export interface Sales {
-  id?: number;
-  store_id: string;
-  year: number;
-  month: number;
-  revenue_inr: number;
-  transaction_count: number;
-  avg_ticket_size: number;
+ 
+
+ 
+
+export interface StoreDetailsDTO {
+  store: {
+    id: string;
+    name: string;
+    address: string;
+    latitude: number;
+    longitude: number;
+    rfmSegment: SEGMENT_ENUM;
+  };
+
+  kpis: KPIItemDTO[];
+
+  revenueTrend: RevenueChartPointDTO[];
+
+  transactionsTrend: TransactionChartPointDTO[];
+
+  demographics: LabelValueDTO[];
+
+  poiSummary: PoiItemDTO[];
 }
 
-export interface StoreSales {
-  store_id: string;
-  store: Store & { area: AreaProfile };
-  sales: Sales[];
+export interface KPIItemDTO {
+  title: string;
+  value: string;
+  subtitle?: string;
+  trend: {
+    value: number;
+    isPositive: boolean;
+  };
+}
+
+export interface RevenueChartPointDTO {
+  label: string;
+  month: number;
+  year: number;
+  revenue: number;
+}
+
+export interface TransactionChartPointDTO {
+  label: string;
+  month: number;
+  year: number;
+  transactions: number;
+}
+
+export interface LabelValueDTO {
+  label: string;
+  value: string;
+}
+
+export interface PoiItemDTO {
+  label: string;
+  value: number;
+}
+
+export interface StoreMapItemDTO {
+  id: string;
+  name: string;
+  city: string;
+  state: string;
+
+  latitude: number;
+  longitude: number;
+
+  rfmScore: number;
+  rfmSegment: SEGMENT_ENUM;
+
+  latestRevenue: number;
+  latestRevenueFormatted: string;
+
+  heatmapWeight: number;
+}
+
+export interface StoreMapResponseDTO {
+  stores: StoreMapItemDTO[];
+
+  filters: {
+    states: string[];
+    citiesByState: Record<string, string[]>;
+    revenueMin: number;
+    revenueMax: number;
+  };
+
+  segmentCounts: {
+    champion: number;
+    promising: number;
+    attention: number;
+  };
 }
